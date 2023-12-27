@@ -1,12 +1,15 @@
 @php
     use App\Models\User;
+    use App\Models\UserQuery;
     $users=User::get()->pluck("name","id");
+    $queries=UserQuery::get()->pluck("note","id");
+
 @endphp
 
 <!-- User Queries Id Field -->
 <div class="form-group">
     {!! Form::label('user_queries_id',  __('User Queries Id')) !!}
-    {!! Form::number('user_queries_id', null, ['class' => 'form-control','required']) !!}
+    {!! Form::select('user_queries_id',$queries, null, ['class' => 'form-control','required']) !!}
 </div>
 
 
@@ -20,7 +23,7 @@
 <!-- Admin Id Field -->
 <div class="form-group">
     {!! Form::label('admin_id',  __('Admin Id')) !!}
-    {!! Form::number('admin_id', null, ['class' => 'form-control','required']) !!}
+    {!! Form::select('admin_id',$users, null, ['class' => 'form-control','required']) !!}
 </div>
 
 

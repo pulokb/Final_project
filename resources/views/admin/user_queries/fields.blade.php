@@ -1,7 +1,15 @@
+@php
+    use App\Models\User;
+    use App\Models\UserQuery;
+    $users=User::get()->pluck("name","id");
+    $queries=UserQuery::get()->pluck("note","id");
+
+@endphp
+
 <!-- User Id Field -->
 <div class="form-group">
     {!! Form::label('user_id',  __('User Id')) !!}
-    {!! Form::number('user_id', null, ['class' => 'form-control','required']) !!}
+    {!! Form::select('user_id',$users, null, ['class' => 'form-control','required']) !!}
 </div>
 
 
