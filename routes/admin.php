@@ -14,9 +14,13 @@ use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\LanguageController;
+use App\Http\Controllers\Admin\NewTest2Controller;
 use App\Http\Controllers\Admin\NotificationController;
+use App\Http\Controllers\Admin\UserQueryController;
+use App\Http\Controllers\Admin\DoctorFeedbackController;
 use App\Http\Controllers\Admin\VisitorInfoController;
 use App\Http\Controllers\Auth\Admin\LoginController;
+use App\Models\NewTest2;
 use Illuminate\Support\Facades\Route;
 
 
@@ -136,7 +140,10 @@ Route::group(['middleware' => ['auth', 'preventBackHistory','notUser','localaiza
          //Application Resources Routes
          Route::resources(
             [
-                // 'faculties' => FacultyController::class,
+                'new_test2s' => NewTest2Controller::class,
+                'user_queries' => UserQueryController::class,
+                'doctor_feedbacks' => DoctorFeedbackController::class,
+
             ]
         );
     });

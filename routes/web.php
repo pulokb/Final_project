@@ -39,3 +39,18 @@ Route::group(['middleware'=>['blockIp','localaization']],function(){
     Route::get('/language/{locale}', [IndexController::class, 'changeLanguage'])->name('changeLanguage');
 });
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::resource('newTest2s', App\Http\Controllers\Admin\NewTest2Controller::class, ["as" => 'admin']);
+});
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::resource('userQueries', App\Http\Controllers\Admin\UserQueryController::class, ["as" => 'admin']);
+});
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::resource('doctorFeedbacks', App\Http\Controllers\Admin\DoctorFeedbackController::class, ["as" => 'admin']);
+});

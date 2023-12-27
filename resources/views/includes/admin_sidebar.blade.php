@@ -221,3 +221,30 @@
         @csrf
     </form>
 </li>
+@can('NewTest2-view')
+<li class="">
+    <a href="{{route('admin.newTest2s.index')}}" class="{{ Request::is(config('admin.admin_route_prefix').'/newTest2s**') ? 'mm-active' : '' }}">
+        <i class="metismenu-icon pe-7s-menu"></i>
+        {{ __('New Test2S') }}
+    </a>
+</li>
+@endcan
+
+@can('UserQuery-view')
+<li class="">
+    <a href="{{route('admin.userQueries.index')}}" class="{{ Request::is(config('admin.admin_route_prefix').'/userQueries**') ? 'mm-active' : '' }}">
+        <i class="metismenu-icon pe-7s-menu"></i>
+        {{ __('User Queries') }}
+    </a>
+</li>
+@endcan
+
+@can('DoctorFeedback-view')
+<li class="">
+    <a href="{{route('admin.doctorFeedbacks.index')}}" class="{{ Request::is(config('admin.admin_route_prefix').'/doctorFeedbacks**') ? 'mm-active' : '' }}">
+        <i class="metismenu-icon pe-7s-menu"></i>
+        {{ __('Doctor Feedbacks') }}
+    </a>
+</li>
+@endcan
+
