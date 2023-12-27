@@ -1,3 +1,8 @@
+@php
+    use App\Models\User;
+    $users=User::get()->pluck("name","id");
+@endphp
+
 <!-- User Queries Id Field -->
 <div class="form-group">
     {!! Form::label('user_queries_id',  __('User Queries Id')) !!}
@@ -8,7 +13,7 @@
 <!-- User Id Field -->
 <div class="form-group">
     {!! Form::label('user_id',  __('User Id')) !!}
-    {!! Form::number('user_id', null, ['class' => 'form-control','required']) !!}
+    {!! Form::select('user_id',$users, null, ['class' => 'form-control','required']) !!}
 </div>
 
 
