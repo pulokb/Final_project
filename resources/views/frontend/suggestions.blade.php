@@ -10,11 +10,13 @@
             <!-- Blog Entry: Anxiety Disorders -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="frontend/anxietydisorders.png" class="card-img-top" alt="Anxiety Disorders">
+                    <img src="frontend/nature.png" class="card-img-top" alt="Get closer to nature">
                     <div class="card-body">
-                        <h5 class="card-title">Anxiety Disorders</h5>
+                        <h5 class="card-title">Get closer to nature</h5>
                         <p class="card-text">
-                            In 2019, 301 million people were living with an anxiety disorder including 58 million children and adolescents (1). Anxiety disorders are characterized by excessive fear and worry and related behavioral disturbances. Symptoms are severe enough to result in significant distress or significant impairment in functioning. There are several different kinds of anxiety disorders, such as: generalized anxiety disorder (characterized by excessive worry), panic disorder (characterized by panic attacks), social anxiety disorder (characterized by excessive fear and worry in social situations), separation anxiety disorder (characterized by excessive fear or anxiety about separation from those individuals to whom the person has a deep emotional bond), and others. Effective psychological treatment exists, and depending on the age and severity, medication may also be considered.
+                            We all live with worries and fears, uncertainties, losses that leave us sad and pressures that make us feel stressed.
+                            Nature can have a really calming effect on us. We have been living around other animals and plants for thousands of years. Some people say nature helps them feel calmer, more hopeful and less alone. Our research found that going for a walk was the UK adults’ favorite way of coping with stress during the pandemic in 2020.
+                            In Japan, some people use “forest bathing”, which may improve their mental health. So going to a forest or wood and experiencing the different smells, sounds and textures may really help. To get the best out of nature’s healing effects, try tuning your senses to what’s around you – the trees, plants, birds and animals, for instance, and water such as ponds or the seashore. Take a deep breath and see how you feel. The idea is to get connected with your natural surroundings.
                         </p>
                         <a href="#" class="btn btn-primary">Read More</a>
                     </div>
@@ -24,11 +26,19 @@
             <!-- Blog Entry: Depression -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="frontend\depression.jpg" class="card-img-top" alt="Depression">
+                    <img src="frontend\sleep.jpeg" class="card-img-top" alt="Get more from your sleep">
                     <div class="card-body">
-                        <h5 class="card-title">Depression</h5>
+                        <h5 class="card-title">Get more from your sleep</h5>
                         <p class="card-text">
-                            In 2019, 280 million people were living with depression, including 23 million children and adolescents (1). Depression is different from usual mood fluctuations and short-lived emotional responses to challenges in everyday life. During a depressive episode, the person experiences depressed mood (feeling sad, irritable, empty) or a loss of pleasure or interest in activities, for most of the day, nearly every day, for at least two weeks. Several other symptoms are also present, which may include poor concentration, feelings of excessive guilt or low self-worth, hopelessness about the future, thoughts about dying or suicide, disrupted sleep, changes in appetite or weight, and feeling especially tired or low in energy. People with depression are at an increased risk of suicide. Yet, effective psychological treatment exists, and depending on the age and severity, medication may also be considered.
+                            Anyone who has struggled with sleep will know what a difference it makes to our bodies, minds and ability to cope with life.
+                            We all have times when we sleep badly, and some of us live in situations that make a good night’s sleep impossible.
+                            For many people, sleep is often the first thing that suffers when we're struggling with our mental health.
+                            Adults need between 7 and 9 hours' sleep a night, including enough dreaming sleep and enough deeper sleep.
+                            If you’re struggling with your sleep, think about making a few simple changes.
+                            For example:
+                            Develop a relaxing bedtime routine to help you start winding down before you actually go to sleep
+                            Avoid TV and mobile screens, alcohol and caffeine before bed. This will help you fall asleep and stay asleep. You could also avoid vigorous exercise before bed.
+                            Go to bed and get up at around the same time every day, including weekends.
                         </p>
                         <a href="#" class="btn btn-primary">Read More</a>
                     </div>
@@ -36,11 +46,14 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="frontend\bipolardisorder.jpg" class="card-img-top" alt="Bipolar Disorder">
+                    <img src="frontend\moving.jpg" class="card-img-top" alt="Keep moving">
                     <div class="card-body">
-                        <h5 class="card-title">Bipolar Disorder</h5>
+                        <h5 class="card-title">Keep moving</h5>
                         <p class="card-text">
-                            In 2019, 40 million people experienced bipolar disorder (1).  People with bipolar disorder experience alternating depressive episodes with periods of manic symptoms.  During a depressive episode, the person experiences depressed mood (feeling sad, irritable, empty) or a loss of pleasure or interest in activities, for most of the day, nearly every day.  Manic symptoms may include euphoria or irritability, increased activity or energy, and other symptoms such as increased talkativeness, racing thoughts, increased self-esteem, decreased need for sleep, distractibility, and impulsive reckless behaviour.  People with bipolar disorder are at an increased risk of suicide. Yet effective treatment options exist including psychoeducation, reduction of stress and strengthening of social functioning, and medication.
+                            Our bodies and minds are connected, so looking after ourselves physically also helps us prevent problems with our mental health (it works the other way around, too).
+                            Moving our bodies – with sport, gardening, dancing, cycling, walking the dog, cleaning or going to the gym, for example – are great ways to improve our mental and physical health.
+                            Exercise releases “feel good” hormones that reduce feelings of stress and anger. It also helps us feel better about our bodies. It can improve our sleep too. If it involves other people, like being part of a team, a class or a group we see regularly, that can also boost our mental health.
+                            We don’t have to be professional athletes, or sporty, to get the benefits of being physically active. From walking to dancing and basketball to the gym, the best exercise is simply the one we enjoy.
                         </p>
                         <a href="#" class="btn btn-primary">Read More</a>
                     </div>
@@ -48,11 +61,15 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="frontend\PTSD.webp" class="card-img-top" alt="Post-Traumatic Stress Disorder (PTSD)">
+                    <img src="frontend\healthy.jpg" class="card-img-top" alt="Eat healthy food">
                     <div class="card-body">
-                        <h5 class="card-title">Post-Traumatic Stress Disorder (PTSD)</h5>
+                        <h5 class="card-title">Eat healthy food</h5>
                         <p class="card-text">
-                            The prevalence of PTSD and other mental disorders is high in conflict-affected settings (3). PTSD may develop following exposure to an extremely threatening or horrific event or series of events. It is characterized by all of the following: 1) re-experiencing the traumatic event or events in the present (intrusive memories, flashbacks, or nightmares); 2) avoidance of thoughts and memories of the event(s), or avoidance of activities, situations, or people reminiscent of the event(s); and 3) persistent perceptions of heightened current threat. These symptoms persist for at least several weeks and cause significant impairment in functioning. Effective psychological treatment exists.
+                            Food and drink affect our bodies, brains and mood - for good or bad.
+                            Sugary snacks and drinks can give us a temporary “high” or sense of comfort that can feel irresistible. But they soon leave us feeling exhausted or jittery. Caffeine in coffee, tea, or so-called energy drinks can also have this effect.
+                            A balanced diet with lots of vegetables and fruit is essential for good physical and mental health.
+                            How we eat is also important. Having meals with other people can help to grow relationships – with family, friends, partners, and colleagues. This is really important in protecting everyone’s mental health and preventing problems.
+                            Food can also get mixed up with our feelings. Some people over-eat or under-eat when they are upset. It may help to talk to someone we trust and get professional support if we need it.
                         </p>
                         <a href="#" class="btn btn-primary">Read More</a>
                     </div>
@@ -60,11 +77,14 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="frontend\schizophrenia.jpg" class="card-img-top" alt="Schizophrenia">
+                    <img src="frontend\kind.png" class="card-img-top" alt="Be kind and help create a better world">
                     <div class="card-body">
-                        <h5 class="card-title">Schizophrenia</h5>
+                        <h5 class="card-title">Be kind and help create a better world</h5>
                         <p class="card-text">
-                            Schizophrenia affects approximately 24 million people or 1 in 300 people worldwide (1). People with schizophrenia have a life expectancy 10-20 years below that of the general population (4).   Schizophrenia is characterized by significant impairments in perception and changes in behavior.  Symptoms may include persistent delusions, hallucinations, disorganized thinking, highly disorganized behavior, or extreme agitation.  People with schizophrenia may experience persistent difficulties with their cognitive functioning.   Yet, a range of effective treatment options exist, including medication, psychoeducation, family interventions, and psychosocial rehabilitation.
+                            If you have ever felt lonely, you will know how much it helps to have even a small connection with someone else.
+                            Exchanging a smile or friendly words can be comforting and lift our mood.
+                            Research shows that being kind is good for both sides. Being kind can boost our mood, help us feel more capable, strengthen our connections with others and even make us cope better with stress.
+                            If you don’t know where to start, you could try small but meaningful acts of kindness, such as offering a smile or a few kind words to another person. You could make their day but also feel better for it - friendly connections with others are vital for our mental health.
                         </p>
                         <a href="#" class="btn btn-primary">Read More</a>
                     </div>
@@ -72,11 +92,15 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="frontend\eatingdisorders.jpeg" class="card-img-top" alt="Eating Disorders">
+                    <img src="frontend\curious.jpg" class="card-img-top" alt="Be curious and open-minded to new experiences">
                     <div class="card-body">
-                        <h5 class="card-title">Eating Disorders</h5>
+                        <h5 class="card-title">Be curious and open-minded to new experiences</h5>
                         <p class="card-text">
-                            In 2019, 14 million people experienced eating disorders including almost 3 million children and adolescents (1). Eating disorders, such as anorexia nervosa and bulimia nervosa, involve abnormal eating and preoccupation with food as well as prominent body weight and shape concerns. The symptoms or behaviors result in significant risk or damage to health, significant distress, or significant impairment of functioning. Anorexia nervosa often has its onset during adolescence or early adulthood and is associated with premature death due to medical complications or suicide.  Individuals with bulimia nervosa are at a significantly increased risk for substance use, suicidality, and health complications. Effective treatment options exist, including family-based treatment and cognitive-based therapy.
+                            We can all get stuck in familiar ways, like how we spend our time and what we think about ourselves and the world.
+                            This can be self-fulfilling, with our expectations influencing what actually happens, for good or bad. For example, we might say to ourselves: “Things never get better” or “I’m useless” as a response to what others have said to us.
+                            It can help to notice these thoughts and try out new ones, such as “I can change things for the better” and “there is so much I can do”.
+                            Life can feel more interesting, lively and rewarding when we are open to trying new experiences and experimenting with how we do things.
+                            It could be as simple as what we have for breakfast or the route we walk with the dog. It could also need some planning, like an adventure holiday. We might find a new place that it turns out we love, discover a talent we didn’t know we had or meet someone new and important.
                         </p>
                         <a href="#" class="btn btn-primary">Read More</a>
                     </div>
@@ -84,11 +108,15 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="frontend\Disruptive behavior and dissocial disorders.jpg" class="card-img-top" alt="Disruptive behavior and dissocial disorders">
+                    <img src="frontend\forward.jpg" class="card-img-top" alt="Plan things to look forward to">
                     <div class="card-body">
-                        <h5 class="card-title">Disruptive behavior and dissocial disorders</h5>
+                        <h5 class="card-title">Plan things to look forward to</h5>
                         <p class="card-text">
-                            40 million people, including children and adolescents, were living with conduct-dissocial disorder in 2019 (1). This disorder, also known as conduct disorder, is one of two disruptive behavior and dissocial disorders, the other is oppositional defiant disorder.  Disruptive behavior and dissocial disorders are characterized by persistent behavior problems such as persistently defiant or disobedient to behaviors that persistently violate the basic rights of others or major age-appropriate societal norms, rules, or laws. Onset of disruptive and dissocial disorders, is commonly, though not always, during childhood. Effective psychological treatments exist, often involving parents, caregivers, and teachers, cognitive problem-solving or social skills training.
+                            Life throws all sorts at us, and during hard times, we may feel hopeless and not have the energy to plan for the future.
+                            Things to look forward to, including fun activities, can help us cope with difficult situations.
+                            Making plans for things we enjoy can increase our sense of hope, which is important for our mental health. Our plan could be for anything from small pleasures, like a cup of tea or your favorite TV program or dance class, to a trip with family or friends, or seeing your favorite film, sports team or singer.
+                            Whether it’s a small or a big one, the important thing is to plan it.
+                            Decide what you’ll do, when and with who and, if needed, book it. It’s important to follow your plan – and repeat.
                         </p>
                         <a href="#" class="btn btn-primary">Read More</a>
                     </div>
@@ -96,12 +124,32 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="frontend\Neurodevelopmental disorders.jpeg" class="card-img-top" alt="Neurodevelopmental disorders">
+                    <img src="frontend\support.jpg" class="card-img-top" alt="Talk to someone you trust for support">
                     <div class="card-body">
-                        <h5 class="card-title">Neurodevelopmental disorders</h5>
+                        <h5 class="card-title">Talk to someone you trust for support</h5>
                         <p class="card-text">
-                            Neurodevelopmental disorders are behavioral and cognitive disorders, that? arise during the developmental period, and involve significant difficulties in the acquisition and execution of specific intellectual, motor, language, or social functions.
-                            Neurodevelopmental disorders include disorders of intellectual development, autism spectrum disorder, and attention deficit hyperactivity disorder (ADHD) amongst others. ADHD is characterized by a persistent pattern of inattention and/or hyperactivity-impulsivity that has a direct negative impact on academic, occupational, or social functioning.  Disorders of intellectual development are characterized by significant limitations in intellectual functioning and adaptive behavior, which refers to difficulties with everyday conceptual, social, and practical skills that are performed in daily life. Autism spectrum disorder (ASD) constitutes a diverse group of conditions characterized by some degree of difficulty with social communication and reciprocal social interaction, as well as persistent restricted, repetitive, and inflexible patterns of behavior, interests, or activities.
+                            Many of us have learned to bottle things up inside us and try to ignore painful feelings. It can take a lot of courage to tell someone else how we’re feeling or what we’re finding hard, especially if we don’t usually do that kind of thing.
+                            Just talking things through with a person we trust can help and feel like a relief.
+                            Use your own words. It’ll make you feel safer and less alone, and that will help protect your mental health and prevent problems.
+                            Talking may also change how you see and feel about the situation in ways you find helpful.
+                            Another possible benefit is that talking may strengthen your relationship with the person you speak with. This will benefit both of you and make it easier for them to turn to you when they need support themselves.
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="frontend\drugs.jpg" class="card-img-top" alt="Be aware of using drugs and/or alcohol to cope with difficult feelings">
+                    <div class="card-body">
+                        <h5 class="card-title">Be aware of using drugs and/or alcohol to cope with difficult feelings</h5>
+                        <p class="card-text">
+                            Many of us sometimes use drugs to block out “difficult” feelings such as sadness, fear or shame.
+                            No one wants to feel bad; for some people, drugs and/or alcohol offer temporary relief.
+                            Unfortunately, they don’t stop the feelings from returning and may make things worse or create other problems, including damage to mental and physical health, relationships, work, or study.
+                            If you think you may be using drugs or alcohol to cope with difficult feelings, it may help to notice it without beating yourself up about it. Being understanding and kind to yourself is good for your mental health.
+                            A possible next step could be to talk with someone you trust or one of the charities that offer confidential, free information and advice, including how to reduce the harmfulness of using drugs. Have a look at Talk To Frank, for example.
+
                         </p>
                         <a href="#" class="btn btn-primary">Read More</a>
                     </div>
