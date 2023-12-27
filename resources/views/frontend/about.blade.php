@@ -8,11 +8,25 @@
         <div class="who-we">
             <div class="row">
                 <div class="col-md-6">
-                    <h3 class="font-normal">Shataphool Bangladesh: At a glance</h3>
+                    <h3 class="font-normal">MindWellHub: At a glance</h3>
+                 <br>
                     <h6>Where We Started</h6>
-                    <p class="text-justify">Shataphool Bangladesh is a non-government, not-for-profit, non-sectarian, and non-political organization working for social development of vulnerable people who haven’t progressed as they should have.
-                        In 2000, the organization came into being when Mr. M. Shafiqul Islam (UNO of Mohanpur Upazila) founded it with a group of young and energetic people, who were highly motivated and committed to contributing their time, skills and energies for the development and empowerment of socially disadvantaged and vulnerable communities in Mohanpur, addressing poverty issues and eliminating gender based discriminations. By 2001, Shataphool Bangladesh evolved into a formal institution offering micro-credit to poor rural women in Jahanabad Union of Mohanpur Upazila.
-                        Over the next decade the micro credit program diversified, and the organization began providing a variety of micro-credit products for its heterogeneous group of family entrepreneurs, alongside various types of social development programs.
+                    <p class="text-justify">Welcome to MindWellHub, a compassionate space dedicated to your mental well-being. At MindWellHub, we believe in the power of thoughtful introspection and professional guidance to foster a healthier mind. Our platform is designed to make mental health support accessible and personalized.
+                        <h6>Features</h6>
+                        <p class="text-justify"> Symptom and Suggestion Blog:
+                            Explore our regularly updated blog where our mental health experts share insights on common symptoms, coping strategies, and self-care tips. Stay informed and inspired on your mental health journey.
+                        </p>
+                        <p class="text-justify">  Community Support:
+                            Connect with others who may be facing similar challenges in our supportive community forum. Share experiences, seek advice, and build a network of understanding individuals.
+                        </p>
+                        <p class="text-justify">Resource Center:
+                            Access a wealth of mental health resources, from articles and videos to recommended reading materials, all curated to empower you on your path to mental well-being.
+                        </p>
+                        <br>
+                        <h6 class="font-normal">Join Us in Nurturing Your Mind</h6>
+                        <p class="text-justify"> MindWellHub is more than a platform; it's a community that values your mental health journey. Together, let's embrace a path of self-discovery, support, and resilience.
+                        Take the first step towards a healthier mind with MindWellHub. Your well-being is our priority.
+                    </p>
                     </p>
 
                 </div>
@@ -23,17 +37,21 @@
 
                         <!-- SERVICES -->
                         <li class="col-sm-12"> <i class="fa fa-eye"></i>
-                            <h5>our vision</h5>
-                            <p class="text-justify">To ensure the sustainable economic development which provides human rights, mainstreams gender equality, ensures social justice, assures good governance by active participation of multi-tier people of society through poor friendly microfinance services.
-
+                            <h5>Our Mission</h5>
+                            <p class="text-justify">
+                                MindWellHub is on a mission to break down barriers to mental health care. We aim to provide a user-friendly platform where individuals can openly express their mental health concerns through a carefully crafted questionnaire. This data is then reviewed by our team of experienced mental health professionals.
                             </p>
 
                         </li>
 
                         <!-- SERVICES -->
                         <li class="col-sm-12"> <i class="fa fa-rocket"></i>
-                            <h5>our mission</h5>
-                            <p class="text-justify">To establish an apolitical, cosmopolitan, not-for-profit, socioeconomic and philanthropic private voluntary organization which will work with the mission of making people self-dependent of all the religions and color, especially regenerating those who are impoverished and underprivileged.
+                            <h5> How It Works</h5>
+                            <p class="text-justify">User Submission: Users can share their mental health situation by answering a series of questions that cover various aspects of their well-being.
+
+                            <p class="text-justify"> Professional Oversight: Our team of licensed mental health professionals carefully reviews each submission, considering individual needs and concerns.</p>
+
+                            <p class="text-justify"> Personalized Feedback: Users receive personalized feedback, which includes an overview of their mental health situation, identified symptoms, and expert suggestions for improvement.</p>
 
                             </p>
 
@@ -44,17 +62,8 @@
 
                     <div class="col-md-6">
                         <div class="broc">
-                            <img class="img-responsive" src="images/q4.png" alt="">
-                            <a href="#." class="icon-down"><i class="fa fa-download"></i></a>
-                            <a href="#." class="icon-file">Get Portfolio</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="broc">
-                            <img class="img-responsive" src="images/q1.png" alt="">
-                            <a href="#." class="icon-down"><i class="fa fa-download"></i></a>
-                            <a href="#." class="icon-file">Get Portfolio</a>
+                            <img src="frontend\MindWellHublogo.png" alt="MindWellHub logo" width="100" height="100">
+                           <br> @ 2023 Copyright By <a href="https://www.linkedin.com/in/pulokbiswas/" class="icon-file">Pulok Biswas</a> All Rights Reserved.
                         </div>
                     </div>
 
