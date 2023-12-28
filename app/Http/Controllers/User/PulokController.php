@@ -37,5 +37,18 @@ class PulokController extends Controller
         return view("frontend.suggestions");
     }
 
+    public function index()
+{
+    // Your logic to fetch data goes here
+    $sliders = []; // Replace this with your logic to fetch slider data from your database or other source
+    $introBlog = []; // Replace this with your logic to fetch intro blog data
+    $doctorBlogs = []; // Replace this with your logic to fetch doctor blog data
+    $doctors = []; // Replace this with your logic to fetch doctor data
+    $suggestions = []; // Replace this with your logic to fetch suggestions data
+    $symptoms = []; // Replace this with your logic to fetch symptoms data
+
+    return view('frontend.index', compact('sliders', 'introBlog', 'doctorBlogs', 'doctors', 'suggestions', 'symptoms'));
+}
+
 
 }
