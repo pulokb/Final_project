@@ -5,6 +5,7 @@
 <div class="container">
     <div class="col-md-6"><br>
         <h3>{{ __('Mental Health Qurries') }}</h3><br>
+        return 5
         <form class="questionnaire-form" data-parsley-validate method="GET" action="{{ route("suggestions_symptoms") }}">
             @csrf
 
