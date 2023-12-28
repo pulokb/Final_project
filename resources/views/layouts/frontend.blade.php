@@ -68,10 +68,12 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-7 col-7">
                     <div class="preheader-left">
-                        <a href="mailto:info@construc.com"><strong>Email:</strong> pulokbiswas.cse@gmail.com</a>
+                        <a href="mailto:info@construc.com"><strong>Email:</strong> mindcruise.campus@gmail.com</a>
                         <a href="phoneto:88-02-8000368"><strong>Hotline:</strong> 880-1793651750</a>
                     </div>
                 </div>
+
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">

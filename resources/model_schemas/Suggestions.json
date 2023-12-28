@@ -24,19 +24,7 @@
         "inView": true
     },
     {
-        "name": "age",
-        "dbType": "integer",
-        "htmlType": "number",
-        "validations": "nullable",
-        "searchable": true,
-        "fillable": true,
-        "primary": false,
-        "inForm": true,
-        "inIndex": true,
-        "inView": true
-    },
-    {
-        "name": "gender",
+        "name": "username",
         "dbType": "string",
         "htmlType": "text",
         "validations": "nullable",
@@ -48,7 +36,7 @@
         "inView": true
     },
     {
-        "name": "physical_rating",
+        "name": "title",
         "dbType": "string",
         "htmlType": "text",
         "validations": "nullable",
@@ -60,8 +48,8 @@
         "inView": true
     },
     {
-        "name": "mental_rating",
-        "dbType": "string",
+        "name": "details",
+        "dbType": "text",
         "htmlType": "text",
         "validations": "nullable",
         "searchable": true,
@@ -72,59 +60,11 @@
         "inView": true
     },
     {
-        "name": "dailylife_problems",
+        "name": "image",
         "dbType": "string",
-        "htmlType": "text",
-        "validations": "nullable",
-        "searchable": true,
-        "fillable": true,
-        "primary": false,
-        "inForm": true,
-        "inIndex": true,
-        "inView": true
-    },
-    {
-        "name": "affected_ability",
-        "dbType": "string",
-        "htmlType": "text",
-        "validations": "nullable",
-        "searchable": true,
-        "fillable": true,
-        "primary": false,
-        "inForm": true,
-        "inIndex": true,
-        "inView": true
-    },
-    {
-        "name": "low_down",
-        "dbType": "string",
-        "htmlType": "text",
-        "validations": "nullable",
-        "searchable": true,
-        "fillable": true,
-        "primary": false,
-        "inForm": true,
-        "inIndex": true,
-        "inView": true
-    },
-    {
-        "name": "affected_relationship",
-        "dbType": "string",
-        "htmlType": "text",
-        "validations": "nullable",
-        "searchable": true,
-        "fillable": true,
-        "primary": false,
-        "inForm": true,
-        "inIndex": true,
-        "inView": true
-    },
-    {
-        "name": "experience",
-        "dbType": "string",
-        "htmlType": "text",
-        "validations": "nullable",
-        "searchable": true,
+        "htmlType": "file",
+        "validations": "nullable|image|mimes:jpeg,png,jpg,gif",
+        "searchable": false,
         "fillable": true,
         "primary": false,
         "inForm": true,

@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
-
+use App\Models\UserQuery;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class PulokController extends Controller
 {
@@ -10,25 +14,31 @@ class PulokController extends Controller
         return view("frontend.query_form");
     }
 
-    public function suggestions_symptoms(){
+    public function suggestions_symptoms(Request $request)
+    {
+        $user = auth()->user();
 
-        // $suggestions_base=[
-        //     "s1",
-        //     "s2",
-        //     "s3",
-        //     "s4",
-        //     "s5",
-        //     "s6",
-        //     "s7",
-        //     "s8",
-        // ];
-        // $symptoms=["d1","d2","d3"];
+        UserQuery::create([
+            'user_id' => $user->id ?? 2,
+            'age' => $request->age,
+            'gender' => $request->gender,
+            'physical_rating' => $request->physical_health_rating,
+            'mental_rating' => $request->mental_health_rating,
+            'dailylife_problems' => $request->physical_health_problems,
+            'work_dailylife_problems' => $request->emotional_problems,
+            'affected_ability' => $request->mental_health_effect_on_work,
+            'low_down' => $request->felt_low_for_2_weeks,
+            'affected_relationship' => $request->mental_health_effect_on_relationships,
+            'experience' => $request->experience_frequency,
+            'note' => $user->name ?? "pulok",
+            // Add other fields as needed
+        ]);
 
-        // shuffle($suggestions_base);
-        // $suggestions = array_slice($suggestions_base, 0, 4);
-        return view("frontend.suggestions_symptoms");
+         $user_queries = UserQuery::latest()->get()->first();
+
+
+        return view("frontend.suggestions_symptoms", compact("user_queries"));
     }
-
 
     public function symptoms(){
         return view("frontend.symptoms");
@@ -36,19 +46,5 @@ class PulokController extends Controller
     public function suggestions(){
         return view("frontend.suggestions");
     }
-
-    public function index()
-{
-    // Your logic to fetch data goes here
-    $sliders = []; // Replace this with your logic to fetch slider data from your database or other source
-    $introBlog = []; // Replace this with your logic to fetch intro blog data
-    $doctorBlogs = []; // Replace this with your logic to fetch doctor blog data
-    $doctors = []; // Replace this with your logic to fetch doctor data
-    $suggestions = []; // Replace this with your logic to fetch suggestions data
-    $symptoms = []; // Replace this with your logic to fetch symptoms data
-
-    return view('frontend.index', compact('sliders', 'introBlog', 'doctorBlogs', 'doctors', 'suggestions', 'symptoms'));
-}
-
 
 }

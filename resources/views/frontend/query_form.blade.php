@@ -5,7 +5,6 @@
 <div class="container">
     <div class="col-md-6"><br>
         <h3>{{ __('Mental Health Qurries') }}</h3><br>
-        return 5
         <form class="questionnaire-form" data-parsley-validate method="GET" action="{{ route("suggestions_symptoms") }}">
             @csrf
 
@@ -61,7 +60,7 @@
                 </select>
             </div>
 
-            <!-- Question 6 -->
+            {{-- <!-- Question 6 -->
             <div class="form-group">
                 <label>{{ __('6. During the past 4 weeks, have you had any problems with your work or daily life due to any emotional problems, such as feeling depressed, sad, or anxious?') }}</label>
                 <select class="form-control" name="emotional_problems">
@@ -69,7 +68,7 @@
                     <option value="no">No</option>
                     <option value="not_sure">Not sure</option>
                 </select>
-            </div>
+            </div> --}}
 
             <!-- Question 7 -->
             <div class="form-group">

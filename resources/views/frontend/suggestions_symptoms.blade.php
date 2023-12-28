@@ -4,6 +4,11 @@
 @section('content')
 <br>
 <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+        </div>
+    </div>
     <div class="col-md-6"><br>
         <h3>{{ __('Query Suggestions and Symptoms') }}</h3><br>
 
@@ -23,6 +28,12 @@
         shuffle($suggestions_base);
         $suggestions = array_slice($suggestions_base, 0, 4);
         @endphp --}}
+
+        {{-- @foreach ($user_queries as $query)
+            <p> {{ $query->age }} </p>
+            <p> {{ $query->gender }} </p>
+        @endforeach --}}
+        <p> {{ $user_queries }} </p>
 
         @if(!empty($suggestions))
             <h4>{{ __('Suggestions') }}</h4>
