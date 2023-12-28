@@ -248,3 +248,12 @@
 </li>
 @endcan
 
+@can('Symptoms-view')
+<li class="">
+    <a href="{{route('admin.symptoms.index')}}" class="{{ Request::is(config('admin.admin_route_prefix').'/symptoms**') ? 'mm-active' : '' }}">
+        <i class="metismenu-icon pe-7s-menu"></i>
+        {{ __('Symptoms') }}
+    </a>
+</li>
+@endcan
+
