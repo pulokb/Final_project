@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use App\Models\UserQuery;
+use App\Models\Symptoms;
+use App\Models\Suggestions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -40,11 +42,43 @@ class PulokController extends Controller
         return view("frontend.suggestions_symptoms", compact("user_queries"));
     }
 
-    public function symptoms(){
-        return view("frontend.symptoms");
-    }
-    public function suggestions(){
-        return view("frontend.suggestions");
-    }
+    public function symptoms(Request $request)
+{
+    $user = auth()->user();
+
+    Symptoms::create([
+        'user_id' => $user->id ?? 2,
+        'username' => $user->name ?? "pulok",
+        'title' => $request->input('title'), // Assuming title is sent in the request
+        'details' => $request->input('content'), // Assuming content is sent in the request
+        'image' => $request->input('image_path'), // Assuming image_path is sent in the request
+        'note' => $user->name ?? "pulok",
+    ]);
+
+    // Fetch symptoms from the database
+    $symptoms = Symptoms::all();
+
+    return view('frontend.symptoms', compact('symptoms'));
+}
+
+public function suggestions(Request $request)
+{
+    $user = auth()->user();
+
+    Suggestions::create([
+        'user_id' => $user->id ?? 2,
+        'username' => $user->name ?? "pulok",
+        'title' => $request->input('title'), // Assuming title is sent in the request
+        'details' => $request->input('content'), // Assuming content is sent in the request
+        'image' => $request->input('image_path'), // Assuming image_path is sent in the request
+        'note' => $user->name ?? "pulok",
+    ]);
+
+    // Fetch suggestions from the database
+    $suggestions = Suggestions::all();
+
+    return view('frontend.suggestions', compact('suggestions'));
+}
+
 
 }
