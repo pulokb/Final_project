@@ -18,6 +18,7 @@ use App\Http\Controllers\Admin\NewTest2Controller;
 use App\Http\Controllers\Admin\NotificationController;
 use App\Http\Controllers\Admin\UserQueryController;
 use App\Http\Controllers\Admin\SymptomsController;
+use App\Http\Controllers\Admin\SuggestionsController;
 use App\Http\Controllers\Admin\DoctorFeedbackController;
 use App\Http\Controllers\Admin\VisitorInfoController;
 use App\Http\Controllers\Auth\Admin\LoginController;
@@ -145,6 +146,7 @@ Route::group(['middleware' => ['auth', 'preventBackHistory','notUser','localaiza
                 'user_queries' => UserQueryController::class,
                 'doctor_feedbacks' => DoctorFeedbackController::class,
                 'symptoms' => SymptomsController::class,
+                'suggestions' => SuggestionsController::class,
 
             ]
         );

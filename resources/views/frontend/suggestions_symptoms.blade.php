@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="col-md-6"><br>
-        <h3>{{ __('Query Suggestions and Symptoms') }}</h3><br>
+        <h3>{{ __('Your Report') }}</h3><br>
 
         {{-- @php
             $suggestions_base=[
@@ -33,7 +33,24 @@
             <p> {{ $query->age }} </p>
             <p> {{ $query->gender }} </p>
         @endforeach --}}
-        <p> {{ $user_queries }} </p>
+        <h5>Age</h5>
+        <p>{{ $user_queries->age }} </p>
+        <h5>Overall, how would you rate your physical health?</h5>
+        <p>{{ $user_queries->physical_rating }} </p>
+        <h5>Overall, how would you rate your mental health?</h5>
+        <p>{{ $user_queries->mental_rating }} </p>
+        <h5>During the past 4 weeks, have you had any problems with your work or daily life due to your physical health? </h5>
+        <p>{{ $user_queries->dailylife_problems }} </p>
+        <h5>During the past 4 weeks, have you had any problems with your work or daily life due to any emotional problems, such as feeling depressed, sad, or anxious?</h5>
+        <p> {{ $user_queries->dailylife_emotinal }} </p>
+        <h5>During the past 4 weeks, how often has your mental health affected your ability to get work done?</h5>
+        <p> {{ $user_queries->affected_ability }} </p>
+        <h5>Have you felt particularly low or down for more than 2 weeks in a row?</h5>
+        <p> {{ $user_queries->low_down }} </p>
+        <h5>During the past two weeks, how often has your mental health affected your relationships?</h5>
+        <p> {{ $user_queries->affected_relationship }} </p>
+        <h5>How often do you experience the following?</h5>
+        <p> {{ $user_queries->experience }} </p>
 
         @if(!empty($suggestions))
             <h4>{{ __('Suggestions') }}</h4>
@@ -43,7 +60,7 @@
                 @endforeach
             </ul>
         @else
-            <p>{{ __('No suggestions available.') }}</p>
+            <a href="{{route('suggestions')}}" class="btn btn-brand-rev">suggestions available</a>
         @endif
 
         @if(!empty($symptoms))
@@ -54,7 +71,7 @@
                 @endforeach
             </ul>
         @else
-            <p>{{ __('No symptoms available.') }}</p>
+            <a href="{{route('symptoms')}}" class="btn btn-brand-rev">symptoms available</a>
         @endif
 
     </div>

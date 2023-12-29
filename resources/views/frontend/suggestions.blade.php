@@ -1,19 +1,18 @@
-<!-- blog.blade.php -->
-@extends('layouts.frontend')
+<@extends('layouts.frontend')
 @section('title','Suggestions')
 @section('content')
     <div class="container">
         <h2>Mental Health Suggestions</h2>
-        <br>  <br>
+        <br> <br>
 
         <div class="row">
             <!-- Blog Entry: Anxiety Disorders -->
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend/nature.png" class="card-img-top" alt="Get closer to nature">
                     <div class="card-body">
                         <h5 class="card-title">Get closer to nature</h5>
-                        <p class="card-text">
+                        <p class="card-text overflow-hidden">
                             We all live with worries and fears, uncertainties, losses that leave us sad and pressures that make us feel stressed.
                             Nature can have a really calming effect on us. We have been living around other animals and plants for thousands of years. Some people say nature helps them feel calmer, more hopeful and less alone. Our research found that going for a walk was the UK adults’ favorite way of coping with stress during the pandemic in 2020.
                             In Japan, some people use “forest bathing”, which may improve their mental health. So going to a forest or wood and experiencing the different smells, sounds and textures may really help. To get the best out of nature’s healing effects, try tuning your senses to what’s around you – the trees, plants, birds and animals, for instance, and water such as ponds or the seashore. Take a deep breath and see how you feel. The idea is to get connected with your natural surroundings.
@@ -25,7 +24,7 @@
 
             <!-- Blog Entry: Depression -->
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend\sleep.jpeg" class="card-img-top" alt="Get more from your sleep">
                     <div class="card-body">
                         <h5 class="card-title">Get more from your sleep</h5>
@@ -45,7 +44,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend\moving.jpg" class="card-img-top" alt="Keep moving">
                     <div class="card-body">
                         <h5 class="card-title">Keep moving</h5>
@@ -60,7 +59,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend\healthy.jpg" class="card-img-top" alt="Eat healthy food">
                     <div class="card-body">
                         <h5 class="card-title">Eat healthy food</h5>
@@ -76,7 +75,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100" >
                     <img src="frontend\kind.png" class="card-img-top" alt="Be kind and help create a better world">
                     <div class="card-body">
                         <h5 class="card-title">Be kind and help create a better world</h5>
@@ -91,7 +90,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend\curious.jpg" class="card-img-top" alt="Be curious and open-minded to new experiences">
                     <div class="card-body">
                         <h5 class="card-title">Be curious and open-minded to new experiences</h5>
@@ -107,7 +106,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend\forward.jpg" class="card-img-top" alt="Plan things to look forward to">
                     <div class="card-body">
                         <h5 class="card-title">Plan things to look forward to</h5>
@@ -123,7 +122,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend\support.jpg" class="card-img-top" alt="Talk to someone you trust for support">
                     <div class="card-body">
                         <h5 class="card-title">Talk to someone you trust for support</h5>
@@ -139,7 +138,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend\drugs.jpg" class="card-img-top" alt="Be aware of using drugs and/or alcohol to cope with difficult feelings">
                     <div class="card-body">
                         <h5 class="card-title">Be aware of using drugs and/or alcohol to cope with difficult feelings</h5>

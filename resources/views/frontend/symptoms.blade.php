@@ -10,7 +10,7 @@
         <div class="row">
             <!-- Blog Entry: Anxiety Disorders -->
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend/anxietydisorders.png" class="card-img-top" alt="Anxiety Disorders">
                     <div class="card-body">
                         <h5 class="card-title">Anxiety Disorders</h5>
@@ -24,7 +24,7 @@
 
             <!-- Blog Entry: Depression -->
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend\depression.jpg" class="card-img-top" alt="Depression">
                     <div class="card-body">
                         <h5 class="card-title">Depression</h5>
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend\bipolardisorder.jpg" class="card-img-top" alt="Bipolar Disorder">
                     <div class="card-body">
                         <h5 class="card-title">Bipolar Disorder</h5>
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend\PTSD.webp" class="card-img-top" alt="Post-Traumatic Stress Disorder (PTSD)">
                     <div class="card-body">
                         <h5 class="card-title">Post-Traumatic Stress Disorder (PTSD)</h5>
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend\schizophrenia.jpg" class="card-img-top" alt="Schizophrenia">
                     <div class="card-body">
                         <h5 class="card-title">Schizophrenia</h5>
@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend\eatingdisorders.jpeg" class="card-img-top" alt="Eating Disorders">
                     <div class="card-body">
                         <h5 class="card-title">Eating Disorders</h5>
@@ -84,7 +84,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend\Disruptive behavior and dissocial disorders.jpg" class="card-img-top" alt="Disruptive behavior and dissocial disorders">
                     <div class="card-body">
                         <h5 class="card-title">Disruptive behavior and dissocial disorders</h5>
@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img src="frontend\Neurodevelopmental disorders.jpeg" class="card-img-top" alt="Neurodevelopmental disorders">
                     <div class="card-body">
                         <h5 class="card-title">Neurodevelopmental disorders</h5>

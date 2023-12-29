@@ -58,15 +58,6 @@
                         </li>
                     </ul>
 
-                    <hr>
-
-                    <div class="col-md-6">
-                        <div class="broc">
-                            <img src="frontend\MindWellHublogo.png" alt="MindWellHub logo" width="100" height="100">
-                           <br> @ 2023 Copyright By <a href="https://www.linkedin.com/in/pulokbiswas/" class="icon-file">Pulok Biswas</a> All Rights Reserved.
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
