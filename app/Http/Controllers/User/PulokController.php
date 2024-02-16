@@ -46,36 +46,37 @@ class PulokController extends Controller
 {
     $user = auth()->user();
 
-    Symptoms::create([
-        'user_id' => $user->id ?? 2,
-        'username' => $user->name ?? "pulok",
-        'title' => $request->input('title'), // Assuming title is sent in the request
-        'details' => $request->input('content'), // Assuming content is sent in the request
-        'image' => $request->input('image_path'), // Assuming image_path is sent in the request
-        'note' => $user->name ?? "pulok",
-    ]);
+    // Symptoms::create([
+    //     'user_id' => $user->id ?? 2,
+    //     'username' => $user->name ?? "pulok",
+    //     'title' => $request->input('title'), // Assuming title is sent in the request
+    //     'details' => $request->input('content'), // Assuming content is sent in the request
+    //     'image' => $request->input('image_path'), // Assuming image_path is sent in the request
+    //     'note' => $user->name ?? "pulok",
+    // ]);
 
     // Fetch symptoms from the database
-    $symptoms = Symptoms::all();
+    $symptoms = Symptoms::get();
 
     return view('frontend.symptoms', compact('symptoms'));
 }
 
 public function suggestions(Request $request)
 {
+    // return $request;
     $user = auth()->user();
 
-    Suggestions::create([
-        'user_id' => $user->id ?? 2,
-        'username' => $user->name ?? "pulok",
-        'title' => $request->input('title'), // Assuming title is sent in the request
-        'details' => $request->input('content'), // Assuming content is sent in the request
-        'image' => $request->input('image_path'), // Assuming image_path is sent in the request
-        'note' => $user->name ?? "pulok",
-    ]);
+    // Suggestions::create([
+    //     'user_id' => $user->id ?? 2,
+    //     'username' => $user->name ?? "pulok",
+    //     'title' => $request->input('title'), // Assuming title is sent in the request
+    //     'details' => $request->input('content'), // Assuming content is sent in the request
+    //     'image' => $request->input('image_path'), // Assuming image_path is sent in the request
+    //     'note' => $user->name ?? "pulok",
+    // ]);
 
     // Fetch suggestions from the database
-    $suggestions = Suggestions::all();
+   $suggestions = Suggestions::get();
 
     return view('frontend.suggestions', compact('suggestions'));
 }
