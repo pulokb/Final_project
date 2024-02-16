@@ -30,19 +30,19 @@
                 <div class="col-lg-4 col-sm-6 col-12">
                     <div class="ltn__blog-item ltn__blog-item-3">
                         <div class="ltn__blog-img">
-                            <a href="{{ route('blog.details', $symptom->id) }}"><img src="{{ asset($symptom->image) }}"
+                            <a href="{{ route('blog.details', $symptom->id) }}"><img src="{{ asset('images/'.$symptom->image) }}"
                                     alt="#"></a>
                         </div>
                         <div class="ltn__blog-brief">
                             <div class="ltn__blog-meta">
-                                <ul>
+                                {{-- <ul>
                                     <li class="ltn__blog-author">
                                         <a href="#"><i class="far fa-user"></i>by: {{ $symptom->author }}</a>
                                     </li>
                                     <li class="ltn__blog-tags">
                                         <a href="#"><i class="fas fa-tags"></i>{{ $symptom->tags }}</a>
                                     </li>
-                                </ul>
+                                </ul> --}}
                             </div>
                             <h3 class="ltn__blog-title"><a
                                     href="{{ route('blog.details', $symptom->id) }}">{{ $symptom->title }}</a></h3>

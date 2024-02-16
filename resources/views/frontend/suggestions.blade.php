@@ -31,18 +31,18 @@
                     <div class="ltn__blog-item ltn__blog-item-3">
                         <div class="ltn__blog-img">
                             <a href="{{ route('blog.details', $suggestion->id) }}"><img
-                                    src="{{ asset($suggestion->image) }}" alt="#"></a>
+                                    src="{{ asset('images/'.$suggestion->image) }}" alt="#"></a>
                         </div>
                         <div class="ltn__blog-brief">
                             <div class="ltn__blog-meta">
-                                <ul>
+                                {{-- <ul>
                                     <li class="ltn__blog-author">
                                         <a href="#"><i class="far fa-user"></i>by: {{ $suggestion->author }}</a>
                                     </li>
                                     <li class="ltn__blog-tags">
                                         <a href="#"><i class="fas fa-tags"></i>{{ $suggestion->tags }}</a>
                                     </li>
-                                </ul>
+                                </ul> --}}
                             </div>
                             <h3 class="ltn__blog-title"><a
                                     href="{{ route('blog.details', $suggestion->id) }}">{{ $suggestion->title }}</a>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\DataTables\SuggestionsDataTable;
+use App\Helpers\FileHelper;
 use App\Http\Requests;
 use App\Http\Requests\SuggestionsCreateRequest;
 use App\Http\Requests\SuggestionsUpdateRequest;
@@ -33,9 +34,12 @@ class SuggestionsController extends AppBaseController
     public function store(SuggestionsCreateRequest $request)
     {
         $this->authorize('Suggestions-create');
-        Suggestions::create($request->all());
-        //$imageName = FileHelper::uploadImage($request);
-        //Suggestions::create(array_merge($request->all(), ['image' => $imageName]));
+        // return $request;
+        // Suggestions::create($request->all());
+
+         $imageName = FileHelper::uploadImage($request);
+        //  return array_merge($request->all(), ['image' => $imageName]);
+        Suggestions::create(array_merge($request->all(), ['image' => $imageName]));
         notify()->success(__("Successfully Created"), __("Success"));
         return redirect(route('admin.suggestions.index'));
     }

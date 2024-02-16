@@ -132,7 +132,7 @@
                                                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                                             {{ __('Logout') }}
                                                         </a></li>
-                                                    <li><a href="{{ route('account') }}">{{ __('My Account') }}</a></li>
+                                                    <li><a href="{{ route('index') }}">{{ __('My Account') }}</a></li>
                                                 </ul>
                                             </li>
                                         @endguest
