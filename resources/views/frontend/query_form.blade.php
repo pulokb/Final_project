@@ -1,134 +1,161 @@
-@extends('layouts.frontend')
-@section('title', 'Questionnaire')
-@section('content')
-<br>
-<div class="container">
-    <div class="col-md-6"><br>
-        <h3>{{ __('Mental Health Qurries') }}</h3><br>
-        <form class="questionnaire-form" data-parsley-validate method="GET" action="{{ route("suggestions_symptoms") }}">
-            @csrf
+@include('layouts.header')
 
-            <!-- Question 1 -->
-            <div class="form-group">
-                <label>{{ __('1. Age') }}</label>
-                <input data-parsley-trigger="change" required type="text" class="form-control" name="age" placeholder="Enter your age">
-            </div>
-
-            <!-- Question 2 -->
-            <div class="form-group">
-                <label>{{ __('2. Gender') }}</label>
-                <select class="form-control" name="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="others">Others</option>
-                    <option value="prefer_not_to_say">Prefer not to say</option>
-                </select>
-            </div>
-
-            <!-- Question 3 -->
-            <div class="form-group">
-                <label>{{ __('3. Overall, how would you rate your physical health?') }}</label>
-                <select class="form-control" name="physical_health_rating">
-                    <option value="excellent">Excellent</option>
-                    <option value="average">Average</option>
-                    <option value="somewhat_poor">Somewhat poor</option>
-                    <option value="poor">Poor</option>
-                    <option value="not_sure">Not sure</option>
-                </select>
-            </div>
-
-            <!-- Question 4 -->
-            <div class="form-group">
-                <label>{{ __('4. Overall, how would you rate your mental health?') }}</label>
-                <select class="form-control" name="mental_health_rating">
-                    <option value="excellent">Excellent</option>
-                    <option value="somewhat_good">Somewhat good</option>
-                    <option value="average">Average</option>
-                    <option value="somewhat_poor">Somewhat poor</option>
-                    <option value="poor">Poor</option>
-                    <option value="not_sure">Not sure</option>
-                </select>
-            </div>
-
-            <!-- Question 5 -->
-            <div class="form-group">
-                <label>{{ __('5. During the past 4 weeks, have you had any problems with your work or daily life due to your physical health?') }}</label>
-                <select class="form-control" name="physical_health_problems">
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                    <option value="not_sure">Not sure</option>
-                </select>
-            </div>
-
-            <!-- Question 6 -->
-            <div class="form-group">
-                <label>{{ __('6. During the past 4 weeks, have you had any problems with your work or daily life due to any emotional problems, such as feeling depressed, sad, or anxious?') }}</label>
-                <select class="form-control" name="emotional_problems">
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                    <option value="not_sure">Not sure</option>
-                </select>
-            </div>
-
-            <!-- Question 7 -->
-            <div class="form-group">
-                <label>{{ __('7. During the past 4 weeks, how often has your mental health affected your ability to get work done?') }}</label>
-                <select class="form-control" name="mental_health_effect_on_work">
-                    <option value="very_often">Very often</option>
-                    <option value="somewhat_often">Somewhat often</option>
-                    <option value="not_so_often">Not so often</option>
-                    <option value="not_at_all">Not at all</option>
-                </select>
-            </div>
-
-            <!-- Question 8 -->
-            <div class="form-group">
-                <label>{{ __('8. Have you felt particularly low or down for more than 2 weeks in a row?') }}</label>
-                <select class="form-control" name="felt_low_for_2_weeks">
-                    <option value="very_often">Very often</option>
-                    <option value="somewhat_often">Somewhat often</option>
-                    <option value="not_so_often">Not so often</option>
-                    <option value="not_at_all">Not at all</option>
-                </select>
-            </div>
-
-            <!-- Question 9 -->
-            <div class="form-group">
-                <label>{{ __('9. During the past two weeks, how often has your mental health affected your relationships?') }}</label>
-                <select class="form-control" name="mental_health_effect_on_relationships">
-                    <option value="very_often">Very often</option>
-                    <option value="somewhat_often">Somewhat often</option>
-                    <option value="not_so_often">Not so often</option>
-                    <option value="not_at_all">Not at all</option>
-                </select>
-            </div>
-
-            <!-- Question 10 -->
-            <div class="form-group">
-                <label>{{ __('10. How often do you experience the following?') }}</label>
-                <div class="row">
-                    <div class="col-md-3">
-                        <label>{{ __('Never') }}</label>
-                        <input type="radio" name="experience_frequency" value="never">
-                    </div>
-                    <div class="col-md-3">
-                        <label>{{ __('Once in a while') }}</label>
-                        <input type="radio" name="experience_frequency" value="once_in_a_while">
-                    </div>
-                    <div class="col-md-3">
-                        <label>{{ __('About half the time') }}</label>
-                        <input type="radio" name="experience_frequency" value="about_half_the_time">
-                    </div>
-                    <div class="col-md-3">
-                        <label>{{ __('Most of the time') }}</label>
-                        <input type="radio" name="experience_frequency" value="most_of_the_time">
+    <!-- BREADCRUMB AREA START -->
+    <div class="ltn__breadcrumb-area text-left bg-overlay-white-30 bg-image " data-bs-bg="view/img/bg/14.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ltn__breadcrumb-inner">
+                        <h1 class="page-title">Test</h1>
+                        <div class="ltn__breadcrumb-list">
+                            <ul>
+                                <li><a href="{{ route('index') }}"><span class="ltn__secondary-color"><i
+                                                class="fas fa-home"></i></span> Home</a></li>
+                                <li>Test</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <button type="submit" class="btn btn-primary">{{ __('Submit') }}</button>
-        </form>
+        </div>
     </div>
-</div>
-<br>
-@endsection
+    <!-- BREADCRUMB AREA END -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ltn__form-box contact-form-box box-shadow white-bg">
+                    <h4 class="title-2">Test Your Mental Health</h4>
+
+                    <form id="healthForm" action="{{ route('suggestions_symptoms') }}" method="post">
+
+                        @csrf
+
+                        <label for="age">1. Age:</label><br>
+                        <input type="number" id="age" name="age" required><br><br>
+
+                        <label>2. Gender:</label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Others</label><br>
+                        <input type="radio" id="prefer_not_say" name="gender" value="prefer_not_say">
+                        <label for="prefer_not_say">Prefer not to say</label><br><br>
+
+                        <label for="physical_health">3. Overall how would you rate your physical health?</label><br>
+                        <select id="physical_health" name="physical_health" required>
+                            <option value="excellent">Excellent</option>
+                            <option value="average">Average</option>
+                            <option value="somewhat_poor">Somewhat poor</option>
+                            <option value="poor">Poor</option>
+                            <option value="not_sure">Not sure</option>
+                        </select><br><br>
+
+                        <label for="mental_health">4. Overall how would you rate your mental health?</label><br>
+                        <select id="mental_health" name="mental_health" required>
+                            <option value="excellent">Excellent</option>
+                            <option value="somewhat_good">Somewhat good</option>
+                            <option value="average">Average</option>
+                            <option value="somewhat_poor">Somewhat poor</option>
+                            <option value="poor">Poor</option>
+                            <option value="not_sure">Not sure</option>
+                        </select><br><br>
+
+                        <label for="therapist">5. Have you seen a therapist in the recent past?</label><br>
+                        <input type="radio" id="therapist_yes" name="therapist" value="yes">
+                        <label for="therapist_yes">Yes</label><br>
+                        <input type="radio" id="therapist_no" name="therapist" value="no">
+                        <label for="therapist_no">No</label><br><br>
+
+                        <label for="medication">6. Are you currently taking any medication?</label><br>
+                        <input type="radio" id="medication_yes" name="medication" value="yes">
+                        <label for="medication_yes">Yes</label><br>
+                        <input type="radio" id="medication_no" name="medication" value="no">
+                        <label for="medication_no">No</label><br><br>
+
+                        <label for="sleep_hours">7. How many hours do you sleep per day?</label><br>
+                        <select id="sleep_hours" name="sleep_hours" required>
+                            <option value="4">Less than 4</option>
+                            <option value="4-6">4-6</option>
+                            <option value="7-9">7-9</option>
+                            <option value="9+">9+</option>
+                        </select><br><br>
+
+                        <label for="sleep_quality">8. How is your quality of sleep?</label><br>
+                        <select id="sleep_quality" name="sleep_quality" required>
+                            <option value="very_bad">Very bad</option>
+                            <option value="bad">Bad</option>
+                            <option value="normal">Normal</option>
+                            <option value="good">Good</option>
+                            <option value="very_good">Very good</option>
+                        </select><br><br>
+
+                        <label for="relationship_status">9. What is your relationship status?</label><br>
+                        <select id="relationship_status" name="relationship_status" required>
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                            <option value="widowed">Widowed</option>
+                            <option value="divorced">Divorced</option>
+                            <option value="separated">Separated</option>
+                        </select><br><br>
+
+                        <label for="content_relationship">10. Do you feel content with your relationships and
+                            family?</label><br>
+                        <input type="radio" id="content_relationship_yes" name="content_relationship" value="yes">
+                        <label for="content_relationship_yes">Yes</label><br>
+                        <input type="radio" id="content_relationship_sometimes" name="content_relationship"
+                            value="sometimes">
+                        <label for="content_relationship_sometimes">Sometimes</label><br>
+                        <input type="radio" id="content_relationship_no" name="content_relationship" value="no">
+                        <label for="content_relationship_no">No</label><br><br>
+
+                        <label for="smoking_frequency">11. How often do you smoke?</label><br>
+                        <select id="smoking_frequency" name="smoking_frequency" required>
+                            <option value="never">Never</option>
+                            <option value="few_weeks">Once in a few weeks</option>
+                            <option value="everyday">Once everyday</option>
+                            <option value="more_than_once">More than once everyday</option>
+                        </select><br><br>
+
+                        <label for="drinking_frequency">12. How often do you drink?</label><br>
+                        <select id="drinking_frequency" name="drinking_frequency" required>
+                            <option value="never">Never</option>
+                            <option value="few_weeks">Once in a few weeks</option>
+                            <option value="everyday">Once everyday</option>
+                            <option value="more_than_once">More than once everyday</option>
+                        </select><br><br>
+
+                        <label for="job_change">13. Have you changed your job recently?</label><br>
+                        <input type="radio" id="job_change_yes" name="job_change" value="yes">
+                        <label for="job_change_yes">Yes</label><br>
+                        <input type="radio" id="job_change_no" name="job_change" value="no">
+                        <label for="job_change_no">No</label><br>
+                        <input type="radio" id="job_change_na" name="job_change" value="na">
+                        <label for="job_change_na">NA</label><br><br>
+
+                        <label for="routine_change">14. Have you changed your routine recently?</label><br>
+                        <input type="radio" id="routine_change_quite" name="routine_change" value="quite">
+                        <label for="routine_change_quite">Yes, quite a bit</label><br>
+                        <input type="radio" id="routine_change_slightly" name="routine_change" value="slightly">
+                        <label for="routine_change_slightly">Yes, slightly</label><br>
+                        <input type="radio" id="routine_change_not" name="routine_change" value="not">
+                        <label for="routine_change_not">Not at all</label><br><br>
+
+                        <label for="tough_emotional">15. Are you going through a tough emotional situation?</label><br>
+                        <input type="radio" id="tough_emotional_yes" name="tough_emotional" value="yes">
+                        <label for="tough_emotional_yes">Yes</label><br>
+                        <input type="radio" id="tough_emotional_no" name="tough_emotional" value="no">
+                        <label for="tough_emotional_no">No</label><br><br>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    @include('layouts.footer')

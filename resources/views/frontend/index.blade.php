@@ -1,118 +1,360 @@
-@extends('layouts.frontend')
-@section('title', 'Home')
-@section('content')
+@include('layouts.header')
+@include('includes.slider')
 
-<!--== Slider Area Start ==-->
-<section id="slider-area">
-    <div class="slider1">
-        <!-- Single Slide Item Start -->
-        <div class="single-slide-wrap slider1">
-            <div class="image-container">
-                <div class="social-networks-icon" style="color: black; position: absolute; top: 50%; left: 10px; transform: translateY(-50%);">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="frontend/slider/flogo.jpg" alt="Facebook Logo" width="18" height="18">
-                                <span>7.2k Likes</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="frontend/slider/xlogo.jpg" alt="Twitter Logo" width="18" height="18">
-                                <span>3.2m Followers</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="frontend/slider/ylogo.jpg" alt="Youtube Logo" width="18" height="18">
-                                <span>2.2k Subscribers</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <img src="frontend/slider/slider.png" alt="" class="img-fluid">
-                <div class="text-overlay">
-                    <div class="slider-content-container" style="background-color: rgba(0, 123, 255, 0.5); color: white;">
-                        <h2>MindCruiseCampus</h2>
-                        <h3>A Solution for<span> Your Mental Health</span></h3>
-                        <p>Guiding You Towards Wellness.</p>
-                        <div class="slider-btn">
-                            <a href="#about-area" class="btn btn-brand smooth-scroll" style="background-color: white; color: #007bff;">Our Mission</a>
-                            <a href="{{ route('about') }}" class="btn btn-brand-rev" style="background-color: #007bff; color: white;">Our Story</a>
+
+
+<!-- FEATURE AREA START ( Feature - 3) -->
+<div class="ltn__feature-area section-bg-1 mt-90--- pt-30 pb-30 mt--65---">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ltn__feature-item-box-wrap ltn__feature-item-box-wrap-2 ltn__border--- section-bg-1">
+                    <div class="ltn__feature-item ltn__feature-item-8">
+                        <div class="ltn__feature-icon">
+                            <img src="view/img/icons/svg/8-trolley.svg" alt="#">
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h4>Free shipping</h4>
+                            <p>On all orders over $49.00</p>
+                        </div>
+                    </div>
+                    <div class="ltn__feature-item ltn__feature-item-8">
+                        <div class="ltn__feature-icon">
+                            <img src="view/img/icons/svg/9-money.svg" alt="#">
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h4>15 days returns</h4>
+                            <p>Moneyback guarantee</p>
+                        </div>
+                    </div>
+                    <div class="ltn__feature-item ltn__feature-item-8">
+                        <div class="ltn__feature-icon">
+                            <img src="view/img/icons/svg/10-credit-card.svg" alt="#">
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h4>Secure checkout</h4>
+                            <p>Protected by Paypal</p>
+                        </div>
+                    </div>
+                    <div class="ltn__feature-item ltn__feature-item-8">
+                        <div class="ltn__feature-icon">
+                            <img src="view/img/icons/svg/11-gift-card.svg" alt="#">
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h4>Offer & gift here</h4>
+                            <p>On all orders over</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Single Slide Item End -->
     </div>
-</section>
+</div>
+<!-- FEATURE AREA END -->
 
-
-<br><br><br><br>
-<!--== Slider Area End ==-->
-
-<!--== About Area Start ==-->
-<section id="about-area" class="section-padding container">
-    <div class="about-area-wrapper">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="about-thumb">
-                    <img src="frontend/support.jpg" alt="" class="img-fluid">
+<!-- ABOUT US AREA START -->
+<div class="ltn__about-us-area pt-25 pb-120 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 align-self-center">
+                <div class="about-us-img-wrap about-img-left">
+                    <img src="view/img/others/9.png" alt="About Us Image">
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="section-title">
-                    <h2>Nurturing Mental Well-being for Every Student's Journey</h2>
+            <div class="col-lg-6 align-self-center">
+                <div class="about-us-info-wrap">
+                    <div class="section-title-area ltn__section-title-2--- mb-30">
+                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color d-none">About Us</h6>
+                        <h1 class="section-title">Your faithful partner for mental health care.</h1>
+                        <p>QuMindWell connects you with qualified and experienced mental health professionals who can
+                            help you with various issues such as stress, anxiety, depression, trauma, addiction,
+                            relationships, and more.</p>
+                    </div>
+                    <ul class="ltn__list-item-1 ltn__list-item-1-before--- clearfix">
+                        <li><i class="fas fa-check-square"></i> Offers self-help resources and community support to help
+                            you improve your mental well-being and resilience.</li>
+                        <li><i class="fas fa-check-square"></i> Helps you access professional, affordable, and
+                            convenient mental health care from anywhere, anytime, and at your own pace.</li>
+                        <li><i class="fas fa-check-square"></i> Improve your mental well-being, such as cognitive
+                            behavioral therapy, positive psychology, stress management, and more.</li>
+                    </ul>
+                    <div class="about-author-info-2 border-top mt-30 pt-20">
+                        <ul>
+                            <li>
+                                <div class="about-author-info-2-brief  d-flex">
+                                    <div class="author-img">
+                                        <img src="view/img/blog/author.jpg" alt="#">
+                                    </div>
+                                    <div class="author-name-designation">
+                                        <h4 class="mb-0">Pulok Biswas</h4>
+                                        <small>Psychiatrists</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="about-author-info-2-contact  d-flex">
+                                    <div class="about-contact-icon d-flex align-self-center mr-10">
+                                        <i class="icon-call"></i>
+                                    </div>
+                                    <div class="about-author-info-2-contact-info">
+                                        <small>Get Support</small>
+                                        <h6 class="mb-0">+8801793651750</h6>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <p>MindCruiseCampus is on a mission to break down barriers to mental health care. We aim to provide a user-friendly platform where individuals can openly express their mental health concerns through a carefully crafted questionnaire. This data is then reviewed by our team of experienced mental health professionals.</p>
-                <a href="{{ route('about') }}" class="btn btn-brand about-btn">know more</a>
             </div>
         </div>
     </div>
-</section>
-<!--== About Area End ==-->
-<br><br><br><br>
-<!--== Our Responsibility Area Start ==-->
-<section id="responsibility-area" class="section-padding container">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <div class="section-title">
-                <h2>Our Responsibility</h2>
+</div>
+<!-- ABOUT US AREA END -->
+
+<!-- ABOUT US AREA START -->
+<div class="ltn__about-us-area bg-image pt-115 pb-110" data-bs-bg="view/img/bg/26.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 align-self-center">
+                <div class="about-us-img-wrap about-img-left">
+                </div>
+            </div>
+            <div class="col-lg-6 align-self-center">
+                <div class="about-us-info-wrap">
+                    <div class="section-title-area ltn__section-title-2--- mb-20">
+                        <h6 class="section-subtitle section-subtitle-2--- ltn__secondary-color">QuMindWell A mental
+                            health counseling system</h6>
+                        <h1 class="section-title">Accessible, Affordable and Quality mental health care for everyone!
+                        </h1>
+                        <p>Your mind is your most valuable asset, and it deserves the best care possible. That’s why
+                            QuMindWell offers you a smart way to care for your mind, by providing you with online
+                            counseling and more for your mental well-being.
+                            QuMindWell helps you access professional, affordable, and convenient mental health care from
+                            anywhere, anytime, and at your own pace. </p>
+                    </div>
+                    <ul class="ltn__list-item-half clearfix">
+                        <li>
+                            <i class="flaticon-home-2"></i>
+                            Online counseling and more
+                        </li>
+                        <li>
+                            <i class="flaticon-mountain"></i>
+                            Mental health professionals
+                        </li>
+                        <li>
+                            <i class="flaticon-heart"></i>
+                            Self-help resources
+                        </li>
+                        <li>
+                            <i class="flaticon-secure"></i>
+                            Safe and supportive space
+                        </li>
+                    </ul>
+                    <div class="btn-wrapper animated">
+                        <a href="about.html" class="theme-btn-1 btn btn-effect-1 text-uppercase">View Details</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row text-center text-sm-left">
-        <div class="col-lg-3 col-sm-6">
-            <div class="single-responsibility">
-                <img src="frontend/support.png" alt="Responsibility">
-                <h4>Community Support</h4>
-                <p>Connect with others who may be facing similar challenges in our supportive community forum. Share experiences, seek advice, and build a network of understanding individuals.</p>
+</div>
+<!-- ABOUT US AREA END -->
+
+<!-- BLOG AREA START (blog-3) -->
+<div class="ltn__blog-area pt-115 pb-45">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title-area ltn__section-title-2--- text-center">
+                    <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color d-none">News & Blogs</h6>
+                    <h1 class="section-title">Leatest Blogs</h1>
+                </div>
             </div>
         </div>
-        <div class="col-lg-3 col-sm-6">
-            <div class="single-responsibility">
-                <img src="frontend/support.png" alt="Responsibility">
-                <h4>Support for Students</h4>
-                <p>Reach out, share, and seek advice in our community forum. Let's navigate university life together. Your well-being is our priority – because every student deserves support.</p>
+        <div class="row  ltn__blog-slider-one-active slick-arrow-1 ltn__blog-item-3-normal">
+            <!-- Blog Item -->
+            <div class="col-lg-12">
+                <div class="ltn__blog-item ltn__blog-item-3">
+                    <div class="ltn__blog-img">
+                        <a href="blog-grid.html"><img src="view/img/blog/1.png" alt="#"></a>
+                    </div>
+                    <div class="ltn__blog-brief">
+                        <div class="ltn__blog-meta">
+                            <ul>
+                                <li class="ltn__blog-author">
+                                    <a href="#"><i class="far fa-user"></i>by: Admin</a>
+                                </li>
+                                <li class="ltn__blog-tags">
+                                    <a href="#"><i class="fas fa-tags"></i>Mental Health</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="ltn__blog-title"><a href="blog-grid.html">How Mental Health Affects Your Physical
+                                Health and What You Can Do About It</a></h3>
+                        <div class="ltn__blog-meta-btn">
+                            <div class="ltn__blog-meta">
+                                <ul>
+                                    <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>January 01, 2024
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ltn__blog-btn">
+                                <a href="blog-grid.html">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-            <div class="single-responsibility">
-                <img src="frontend/support.png" alt="Responsibility">
-                <h4>University Network</h4>
-                <p>Share experiences, seek advice, and build a supportive community. Your well-being matters to us!</p>
+            <!-- Blog Item -->
+            <div class="col-lg-12">
+                <div class="ltn__blog-item ltn__blog-item-3">
+                    <div class="ltn__blog-img">
+                        <a href="blog-grid.html"><img src="view/img/blog/2.png" alt="#"></a>
+                    </div>
+                    <div class="ltn__blog-brief">
+                        <div class="ltn__blog-meta">
+                            <ul>
+                                <li class="ltn__blog-author">
+                                    <a href="#"><i class="far fa-user"></i>by: Admin</a>
+                                </li>
+                                <li class="ltn__blog-tags">
+                                    <a href="#"><i class="fas fa-tags"></i>Mental Health</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="ltn__blog-title"><a href="blog-grid.html">The Impact of Childhood Abuse on Mental
+                                Health and How to Heal from Trauma</a></h3>
+                        <div class="ltn__blog-meta-btn">
+                            <div class="ltn__blog-meta">
+                                <ul>
+                                    <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>January 01, 2024
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ltn__blog-btn">
+                                <a href="blog-grid.html">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- Blog Item -->
+            <div class="col-lg-12">
+                <div class="ltn__blog-item ltn__blog-item-3">
+                    <div class="ltn__blog-img">
+                        <a href="blog-grid.html"><img src="view/img/blog/3.png" alt="#"></a>
+                    </div>
+                    <div class="ltn__blog-brief">
+                        <div class="ltn__blog-meta">
+                            <ul>
+                                <li class="ltn__blog-author">
+                                    <a href="#"><i class="far fa-user"></i>by: Admin</a>
+                                </li>
+                                <li class="ltn__blog-tags">
+                                    <a href="#"><i class="fas fa-tags"></i>Mental Health</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="ltn__blog-title"><a href="blog-grid.html">The Benefits of Online Counseling for
+                                Your Mental Well-Being</a></h3>
+                        <div class="ltn__blog-meta-btn">
+                            <div class="ltn__blog-meta">
+                                <ul>
+                                    <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>January 01, 2024
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ltn__blog-btn">
+                                <a href="blog-grid.html">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Item -->
+            <div class="col-lg-12">
+                <div class="ltn__blog-item ltn__blog-item-3">
+                    <div class="ltn__blog-img">
+                        <a href="blog-grid.html"><img src="view/img/blog/4.png" alt="#"></a>
+                    </div>
+                    <div class="ltn__blog-brief">
+                        <div class="ltn__blog-meta">
+                            <ul>
+                                <li class="ltn__blog-author">
+                                    <a href="#"><i class="far fa-user"></i>by: Admin</a>
+                                </li>
+                                <li class="ltn__blog-tags">
+                                    <a href="#"><i class="fas fa-tags"></i>Mental Health</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="ltn__blog-title"><a href="blog-grid.html">How to Break Free from Your Mental
+                                Barriers and Achieve Your Goals</a></h3>
+                        <div class="ltn__blog-meta-btn">
+                            <div class="ltn__blog-meta">
+                                <ul>
+                                    <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>January 01, 2024
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ltn__blog-btn">
+                                <a href="blog-grid.html">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Item -->
+            <div class="col-lg-12">
+                <div class="ltn__blog-item ltn__blog-item-3">
+                    <div class="ltn__blog-img">
+                        <a href="blog-grid.html"><img src="view/img/blog/5.jpg" alt="#"></a>
+                    </div>
+                    <div class="ltn__blog-brief">
+                        <div class="ltn__blog-meta">
+                            <ul>
+                                <li class="ltn__blog-author">
+                                    <a href="#"><i class="far fa-user"></i>by: Admin</a>
+                                </li>
+                                <li class="ltn__blog-tags">
+                                    <a href="#"><i class="fas fa-tags"></i>Mental Health</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="ltn__blog-title"><a href="blog-grid.html">The Importance of Self-Care and
+                                Self-Compassion for Your Mental Health</a></h3>
+                        <div class="ltn__blog-meta-btn">
+                            <div class="ltn__blog-meta">
+                                <ul>
+                                    <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>January 01, 2024
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ltn__blog-btn">
+                                <a href="blog-grid.html">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
         </div>
-        <div class="col-lg-3 col-sm-6">
-            <div class="single-responsibility">
-                <img src="frontend/support.png" alt="Responsibility">
-                <h4>Build Our Community</h4>
-                <p>Join us in fostering a supportive university network. Share, connect, and make a lasting impact together. Your involvement matters!</p>
+    </div>
+</div>
+<!-- BLOG AREA END -->
+
+<!-- BRAND LOGO AREA START -->
+<!-- <div class="ltn__brand-logo-area ltn__brand-logo-1 section-bg-1--- pt-110--- pb-95 plr--9--- d-none---">
+    <div class="container">
+        <div class="row ltn__brand-logo-active">
+            <div class="col-lg-12">
+                <div class="ltn__brand-logo-item">
+                    <img src="view/img/brand-logo/1.png" alt="Brand Logo">
+                </div>
             </div>
         </div>
     </div>
-</section>
-<!--== Our Responsibility Area End ==-->
-<br><br><br>
-@endsection
+</div> -->
+<!-- BRAND LOGO AREA END -->
+
+@include('layouts.footer')
