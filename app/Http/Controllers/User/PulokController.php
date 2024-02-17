@@ -81,5 +81,9 @@ public function suggestions(Request $request)
     return view('frontend.suggestions', compact('suggestions'));
 }
 
+public function faq(){
+    return view("frontend.faq");
+}
+
 
 }

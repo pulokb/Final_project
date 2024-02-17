@@ -1,64 +1,68 @@
-@extends('layouts.frontend')
-@section('title','Register')
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">
-                    Register here
-                </div>
-                <div class="card-body">
-                    <form data-parsley-validate enctype="multipart/form-data" action="{{route('register')}}"
-                        method="POST">
-                        @csrf
-                        <div class="form-group">
-                            <label>Name*</label>
-                            <input maxlength="191" autofocus required type="text" value="{{old('name')}}" name="name"
-                                class="form-control" placeholder="Enter Name">
-                        </div>
-                        <div class="form-group">
-                            <label>Email address*</label>
-                            <input maxlength="191" value="{{old('email')}}" name="email" required type="email"
-                                class="form-control" placeholder="Enter Email">
-                        </div>
-                        <div class="form-group">
-                            <label>Phone</label>
-                            <input value="{{old('phone')}}" name="phone" type="text" class="form-control"
-                                placeholder="Enter Phone">
-                        </div>
-                        <div class="form-group">
-                            <label>Address</label>
-                            <input maxlength="191" value="{{old('address')}}" name="address" type="text"
-                                class="form-control" placeholder="Enter Address">
-                        </div>
-                        <div class="form-group">
-                            <label>Password*</label>
-                            <input required name="password" minlength="8" type="password" class="form-control"
-                                placeholder="Enter Password">
-                        </div>
-                        <div class="form-group">
-                            <label>Confirm Password*</label>
-                            <input required name="password_confirmation" minlength="8" type="password"
-                                class="form-control" placeholder="ConfirmPassword">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Image</label>
-                            <input name="image" type="file" class="form-control" accept="image/*">
-                        </div>
-                        <div class="form-footer pt-4 pt-2 mt-4 border-top">
-                            <button type="submit" class="mb-1 btn btn-success">
-                                <i class=" mdi mdi-checkbox-marked-outline mr-1"></i> Register
-                            </button>
-                            <div class="pull-right">
-                                Already have an account? <a href="{{route('login')}}">Login here</a>
-                            </div>
-                        </div>
-                    </form>
+@include('layouts.header')
+<!-- BREADCRUMB AREA START -->
+<div class="ltn__breadcrumb-area text-left bg-overlay-white-30 bg-image " data-bs-bg="{{ asset('view/img/bg/14.png') }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ltn__breadcrumb-inner">
+                    <h1 class="page-title">Account</h1>
+                    <div class="ltn__breadcrumb-list">
+                        <ul>
+                            <li><a href="{{ route('index') }}"><span class="ltn__secondary-color"><i
+                                            class="fas fa-home"></i></span> Home</a></li>
+                            <li>Register</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-@endsection
+<!-- BREADCRUMB AREA END -->
+
+<!-- LOGIN AREA START (Register) -->
+<div class="ltn__login-area pb-110">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title-area text-center">
+                    <h1 class="section-title">Register <br>Your Account</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="account-login-inner">
+                    <form action="#" class="ltn__form-box contact-form-box">
+                        <input type="text" name="firstname" placeholder="First Name">
+                        <input type="text" name="lastname" placeholder="Last Name">
+                        <input type="text" name="email" placeholder="Email*">
+                        <input type="password" name="password" placeholder="Password*">
+                        <input type="password" name="confirmpassword" placeholder="Confirm Password*">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            I consent to Herboil processing my personal data in order to send personalized marketing
+                            material in accordance with the consent form and the privacy policy.
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            By clicking "create account", I consent to the privacy policy.
+                        </label>
+                        <div class="btn-wrapper">
+                            <button class="theme-btn-1 btn reverse-color btn-block" type="submit">CREATE
+                                ACCOUNT</button>
+                        </div>
+                    </form>
+                    <div class="by-agree text-center">
+                        <div class="go-to-btn mt-50">
+                            <a href="{{ url('login') }}">ALREADY HAVE AN ACCOUNT ?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- LOGIN AREA END -->
+
+@include('layouts.footer')
