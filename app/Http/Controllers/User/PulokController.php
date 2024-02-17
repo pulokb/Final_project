@@ -88,8 +88,12 @@ public function suggestions(Request $request)
 public function faq(){
     return view("frontend.faq");
 }
-public function details(){
-    return view("frontend.blogdetails");
+
+public function details(int $id)
+{
+    $symptom = Symptoms::findOrFail($id); // Assuming your model is named BlogPost
+    return view('frontend.blogdetails', compact('symptom'));
+
 }
 
 

@@ -28,6 +28,7 @@ Route::group(['middleware'=>['blockIp','localaization']],function(){
     Route::get('suggestions', [PulokController::class, 'suggestions'])->name('suggestions');
     Route::get('faq', [PulokController::class, 'faq'])->name('faq');
     Route::get('blogdetails', [PulokController::class, 'details'])->name('blog.details');
+    Route::get('/symptoms/{id}', [PulokController::class, 'symptom'])->name('symptom.details');
     Route::get('search', [SearchController::class,'search'])->name('search');
 
 
