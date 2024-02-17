@@ -88,6 +88,9 @@ public function suggestions(Request $request)
 public function faq(){
     return view("frontend.faq");
 }
+public function details(){
+    return view("frontend.blogdetails");
+}
 
 
 }

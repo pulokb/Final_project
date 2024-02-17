@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\DataTables\SymptomsDataTable;
+use App\Helpers\FileHelper;
 use App\Http\Requests;
 use App\Http\Requests\SymptomsCreateRequest;
 use App\Http\Requests\SymptomsUpdateRequest;
@@ -33,9 +34,9 @@ class SymptomsController extends AppBaseController
     public function store(SymptomsCreateRequest $request)
     {
         $this->authorize('Symptoms-create');
-        Symptoms::create($request->all());
-        //$imageName = FileHelper::uploadImage($request);
-        //Symptoms::create(array_merge($request->all(), ['image' => $imageName]));
+        // Symptoms::create($request->all());
+        $imageName = FileHelper::uploadImage($request);
+        Symptoms::create(array_merge($request->all(), ['image' => $imageName]));
         notify()->success(__("Successfully Created"), __("Success"));
         return redirect(route('admin.symptoms.index'));
     }
