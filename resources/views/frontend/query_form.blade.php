@@ -101,15 +101,14 @@
                             <option value="separated">Separated</option>
                         </select><br><br>
 
-                        <label for="content_relationship">10. Do you feel content with your relationships and
-                            family?</label><br>
-                        <input type="radio" id="content_relationship_yes" name="content_relationship" value="yes">
-                        <label for="content_relationship_yes">Yes</label><br>
-                        <input type="radio" id="content_relationship_sometimes" name="content_relationship"
+                        <label for="current_relationship">10. Are you satisfied with your current relationships and family ?</label><br>
+                        <input type="radio" id="current_relationship_yes" name="current_relationship" value="yes">
+                        <label for="current_relationship_yes">Yes</label><br>
+                        <input type="radio" id="current_relationship_sometimes" name="current_relationship"
                             value="sometimes">
-                        <label for="content_relationship_sometimes">Sometimes</label><br>
-                        <input type="radio" id="content_relationship_no" name="content_relationship" value="no">
-                        <label for="content_relationship_no">No</label><br><br>
+                        <label for="current_relationship_sometimes">Sometimes</label><br>
+                        <input type="radio" id="current_relationship_no" name="current_relationship" value="no">
+                        <label for="current_relationship_no">No</label><br><br>
 
                         <label for="smoking_frequency">11. How often do you smoke?</label><br>
                         <select id="smoking_frequency" name="smoking_frequency" required>

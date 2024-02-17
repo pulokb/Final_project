@@ -52,7 +52,7 @@
                                                 <li><a href="#" class="dropdown-toggle"><span
                                                             class="active-currency">English</span></a>
                                                     <ul>
-                                                        <li><a href="#">Bengali</a></li>
+                                                        {{-- <li><a href="#">Bengali</a></li> --}}
                                                         <li><a href="#">English</a></li>
                                                     </ul>
                                                 </li>
@@ -202,10 +202,11 @@
                     <button class="ltn__utilize-close">×</button>
                 </div>
                 <div class="ltn__utilize-menu-search-form">
-                    <form action="#">
-                        <input type="text" placeholder="Search...">
-                        <button><i class="fas fa-search"></i></button>
+                    <form action="{{ route('search') }}" method="GET">
+                        <input type="text" name="query" placeholder="Search...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
                     </form>
+
                 </div>
                 <div class="ltn__utilize-menu">
                     <ul>
@@ -216,9 +217,32 @@
                         <li><a href="{{ route('about') }}">About</a></li>
                         <li><a href="{{ route('faq') }}">FAQ</a></li>
                         <li><a href="{{ route('contact') }}">Contact</a></li>
+                        <!-- Authentication Links -->
+                        @guest
+                        @if (Route::has('login'))
+                            <li><a href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                        @endif
+                        @if (Route::has('register'))
+                            <li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>
+                        @endif
+                    @else
+                        <li>
+                            <a href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                {{ Auth::user()->name }}
+                            </a>
+                            <ul>
+                                <li><a href="{{ route('logout') }}"
+                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a></li>
+                                <li><a href="{{ route('index') }}">{{ __('My Account') }}</a></li>
+                            </ul>
+                        </li>
+                    @endguest
+                    <!-- End Authentication Links -->
                     </ul>
                 </div>
-                <div class="ltn__utilize-buttons ltn__utilize-buttons-2">
+                {{-- <div class="ltn__utilize-buttons ltn__utilize-buttons-2">
                     <ul>
                         <li>
                             <a href="#" title="My Account">
@@ -229,7 +253,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> --}}
                 <div class="ltn__social-media-2">
                     <ul>
                         <li><a href="https://www.facebook.com/pulokbiswas24Dec" title="Facebook"><i

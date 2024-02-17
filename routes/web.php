@@ -10,6 +10,7 @@ use App\Http\Controllers\Frontend\ContactFeedbackController;
 use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Frontend\PageController;
 use App\Http\Controllers\User\PulokController;
+use App\Http\Controllers\User\SearchController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware'=>['blockIp','localaization']],function(){
@@ -22,10 +23,12 @@ Route::group(['middleware'=>['blockIp','localaization']],function(){
     Route::get('feedback', [ContactFeedbackController::class, 'feedback'])->name('feedback');
     Route::get('query_form', [PulokController::class, 'query_form'])->name('query_form');
     Route::get('suggestions_symptoms', [PulokController::class, 'suggestions_symptoms'])->name('suggestions_symptoms');
+    Route::post('suggestions_symptoms', [PulokController::class, 'suggestions_symptoms'])->name('suggestions_symptoms');
     Route::get('symptoms', [PulokController::class, 'symptoms'])->name('symptoms');
     Route::get('suggestions', [PulokController::class, 'suggestions'])->name('suggestions');
     Route::get('faq', [PulokController::class, 'faq'])->name('faq');
     Route::get('blogdetails', [PulokController::class, 'details'])->name('blog.details');
+    Route::get('search', [SearchController::class,'search'])->name('search');
 
 
     // Pages

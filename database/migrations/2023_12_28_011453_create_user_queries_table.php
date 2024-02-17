@@ -20,14 +20,19 @@ class CreateUserQueriesTable extends Migration
             $table->integer('user_id');
             $table->integer('age');
             $table->string('gender');
-            $table->string('physical_rating');
-            $table->string('mental_rating');
-            $table->string('dailylife_problems');
-            $table->string('affected_ability');
-            $table->string('low_down');
-            $table->string('affected_relationship');
-            $table->string('experience');
-            $table->text('note');
+            $table->string('physical_health');
+            $table->string('mental_health');
+            $table->string('therapist');
+            $table->string('medication');
+            $table->string('sleep_hours');
+            $table->string('sleep_quality');
+            $table->string('relationship_status');
+            $table->string('current_relationship');
+            $table->string('smoking_frequency');
+            $table->string('drinking_frequency');
+            $table->string('job_change');
+            $table->string('routine_change');
+            $table->string('tough_emotional');
             $table->timestamps();
         });
 

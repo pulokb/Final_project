@@ -149,188 +149,48 @@
 </div>
 <!-- ABOUT US AREA END -->
 
-<!-- BLOG AREA START (blog-3) -->
+{{-- <!-- BLOG AREA START (blog-3) -->
 <div class="ltn__blog-area pt-115 pb-45">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title-area ltn__section-title-2--- text-center">
                     <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color d-none">News & Blogs</h6>
-                    <h1 class="section-title">Leatest Blogs</h1>
+                    <h1 class="section-title">Latest Blogs</h1>
                 </div>
             </div>
         </div>
         <div class="row  ltn__blog-slider-one-active slick-arrow-1 ltn__blog-item-3-normal">
+            @foreach($posts as $post)
             <!-- Blog Item -->
             <div class="col-lg-12">
                 <div class="ltn__blog-item ltn__blog-item-3">
                     <div class="ltn__blog-img">
-                        <a href="blog-grid.html"><img src="view/img/blog/1.png" alt="#"></a>
+                        <img src="{{ asset('path/to/your/image/' . $post->image) }}" alt="{{ $post->title }}">
                     </div>
                     <div class="ltn__blog-brief">
                         <div class="ltn__blog-meta">
+                            <!-- Meta data -->
                             <ul>
-                                <li class="ltn__blog-author">
-                                    <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                </li>
-                                <li class="ltn__blog-tags">
-                                    <a href="#"><i class="fas fa-tags"></i>Mental Health</a>
-                                </li>
+                                <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>{{ $post->created_at->format('M d, Y') }}</li>
                             </ul>
                         </div>
-                        <h3 class="ltn__blog-title"><a href="blog-grid.html">How Mental Health Affects Your Physical
-                                Health and What You Can Do About It</a></h3>
+                        <h3 class="ltn__blog-title"><a href="#">{{ $post->title }}</a></h3>
                         <div class="ltn__blog-meta-btn">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>January 01, 2024
-                                    </li>
-                                </ul>
-                            </div>
                             <div class="ltn__blog-btn">
-                                <a href="blog-grid.html">Read more</a>
+                                <a href="{{ route('blog.show', $post->id) }}">Read more</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Blog Item -->
-            <div class="col-lg-12">
-                <div class="ltn__blog-item ltn__blog-item-3">
-                    <div class="ltn__blog-img">
-                        <a href="blog-grid.html"><img src="view/img/blog/2.png" alt="#"></a>
-                    </div>
-                    <div class="ltn__blog-brief">
-                        <div class="ltn__blog-meta">
-                            <ul>
-                                <li class="ltn__blog-author">
-                                    <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                </li>
-                                <li class="ltn__blog-tags">
-                                    <a href="#"><i class="fas fa-tags"></i>Mental Health</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="ltn__blog-title"><a href="blog-grid.html">The Impact of Childhood Abuse on Mental
-                                Health and How to Heal from Trauma</a></h3>
-                        <div class="ltn__blog-meta-btn">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>January 01, 2024
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="ltn__blog-btn">
-                                <a href="blog-grid.html">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Blog Item -->
-            <div class="col-lg-12">
-                <div class="ltn__blog-item ltn__blog-item-3">
-                    <div class="ltn__blog-img">
-                        <a href="blog-grid.html"><img src="view/img/blog/3.png" alt="#"></a>
-                    </div>
-                    <div class="ltn__blog-brief">
-                        <div class="ltn__blog-meta">
-                            <ul>
-                                <li class="ltn__blog-author">
-                                    <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                </li>
-                                <li class="ltn__blog-tags">
-                                    <a href="#"><i class="fas fa-tags"></i>Mental Health</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="ltn__blog-title"><a href="blog-grid.html">The Benefits of Online Counseling for
-                                Your Mental Well-Being</a></h3>
-                        <div class="ltn__blog-meta-btn">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>January 01, 2024
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="ltn__blog-btn">
-                                <a href="blog-grid.html">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Blog Item -->
-            <div class="col-lg-12">
-                <div class="ltn__blog-item ltn__blog-item-3">
-                    <div class="ltn__blog-img">
-                        <a href="blog-grid.html"><img src="view/img/blog/4.png" alt="#"></a>
-                    </div>
-                    <div class="ltn__blog-brief">
-                        <div class="ltn__blog-meta">
-                            <ul>
-                                <li class="ltn__blog-author">
-                                    <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                </li>
-                                <li class="ltn__blog-tags">
-                                    <a href="#"><i class="fas fa-tags"></i>Mental Health</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="ltn__blog-title"><a href="blog-grid.html">How to Break Free from Your Mental
-                                Barriers and Achieve Your Goals</a></h3>
-                        <div class="ltn__blog-meta-btn">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>January 01, 2024
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="ltn__blog-btn">
-                                <a href="blog-grid.html">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Blog Item -->
-            <div class="col-lg-12">
-                <div class="ltn__blog-item ltn__blog-item-3">
-                    <div class="ltn__blog-img">
-                        <a href="blog-grid.html"><img src="view/img/blog/5.jpg" alt="#"></a>
-                    </div>
-                    <div class="ltn__blog-brief">
-                        <div class="ltn__blog-meta">
-                            <ul>
-                                <li class="ltn__blog-author">
-                                    <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                </li>
-                                <li class="ltn__blog-tags">
-                                    <a href="#"><i class="fas fa-tags"></i>Mental Health</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="ltn__blog-title"><a href="blog-grid.html">The Importance of Self-Care and
-                                Self-Compassion for Your Mental Health</a></h3>
-                        <div class="ltn__blog-meta-btn">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>January 01, 2024
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="ltn__blog-btn">
-                                <a href="blog-grid.html">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--  -->
+            <!-- End Blog Item -->
+            @endforeach
         </div>
     </div>
 </div>
-<!-- BLOG AREA END -->
+<!-- BLOG AREA END --> --}}
+
 
 <!-- BRAND LOGO AREA START -->
 <div class="ltn__brand-logo-area ltn__brand-logo-1 section-bg-1--- pt-110--- pb-95 plr--9--- d-none---">
