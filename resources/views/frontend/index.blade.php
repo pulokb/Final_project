@@ -1,48 +1,37 @@
 @include('layouts.header')
 @include('includes.slider')
 
-
-
 <!-- FEATURE AREA START ( Feature - 3) -->
 <div class="ltn__feature-area section-bg-1 mt-90--- pt-30 pb-30 mt--65---">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="ltn__feature-item-box-wrap ltn__feature-item-box-wrap-2 ltn__border--- section-bg-1">
-                    <div class="ltn__feature-item ltn__feature-item-8">
+                    {{-- <div class="ltn__feature-item ltn__feature-item-8">
                         <div class="ltn__feature-icon">
-                            <img src="view/img/icons/svg/8-trolley.svg" alt="#">
+                            <img src="view/img/icons/svg/8-trolley.png" alt="#">
                         </div>
                         <div class="ltn__feature-info">
-                            <h4>Free shipping</h4>
-                            <p>On all orders over $49.00</p>
+                            <h4>Mental Health Counseling</h4>
+                            <p>Available for all individuals seeking support</p>
+                        </div>
+                    </div> --}}
+                    <div class="ltn__feature-item ltn__feature-item-8">
+                        <div class="ltn__feature-icon">
+                            <img src="view/img/icons/svg/9-money.png" alt="#">
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h4> Questionnaire and Feedback</h4>
+                            <p>Mental health assistance, with no financial barrier</p>
                         </div>
                     </div>
                     <div class="ltn__feature-item ltn__feature-item-8">
                         <div class="ltn__feature-icon">
-                            <img src="view/img/icons/svg/9-money.svg" alt="#">
+                            <img src="view/img/icons/svg/10-credit-card.png" alt="#">
                         </div>
                         <div class="ltn__feature-info">
-                            <h4>15 days returns</h4>
-                            <p>Moneyback guarantee</p>
-                        </div>
-                    </div>
-                    <div class="ltn__feature-item ltn__feature-item-8">
-                        <div class="ltn__feature-icon">
-                            <img src="view/img/icons/svg/10-credit-card.svg" alt="#">
-                        </div>
-                        <div class="ltn__feature-info">
-                            <h4>Secure checkout</h4>
-                            <p>Protected by Paypal</p>
-                        </div>
-                    </div>
-                    <div class="ltn__feature-item ltn__feature-item-8">
-                        <div class="ltn__feature-icon">
-                            <img src="view/img/icons/svg/11-gift-card.svg" alt="#">
-                        </div>
-                        <div class="ltn__feature-info">
-                            <h4>Offer & gift here</h4>
-                            <p>On all orders over</p>
+                            <h4>Providing Support at No Cost</h4>
+                            <p>Accessible Mental Health Support: No Cost.</p>
                         </div>
                     </div>
                 </div>
@@ -87,7 +76,7 @@
                                     </div>
                                     <div class="author-name-designation">
                                         <h4 class="mb-0">Pulok Biswas</h4>
-                                        <small>Psychiatrists</small>
+                                        <small>Admin</small>
                                     </div>
                                 </div>
                             </li>
@@ -344,7 +333,7 @@
 <!-- BLOG AREA END -->
 
 <!-- BRAND LOGO AREA START -->
-<!-- <div class="ltn__brand-logo-area ltn__brand-logo-1 section-bg-1--- pt-110--- pb-95 plr--9--- d-none---">
+<div class="ltn__brand-logo-area ltn__brand-logo-1 section-bg-1--- pt-110--- pb-95 plr--9--- d-none---">
     <div class="container">
         <div class="row ltn__brand-logo-active">
             <div class="col-lg-12">
@@ -354,7 +343,7 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 <!-- BRAND LOGO AREA END -->
 
 @include('layouts.footer')

@@ -3,25 +3,25 @@
 
 <head>
     <base href="/public">
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>QuMindWell - Navigating Minds, Building Wellness</title>
-        <meta name="robots" content="noindex, follow" />
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Place favicon.png in the root directory -->
-        <link rel="shortcut icon" href="{{ asset('view/img/favicon.png') }}" type="image/x-icon" />
-        <!-- Font Icons css -->
-        <link rel="stylesheet" href="{{ asset('view/css/font-icons.css') }}">
-        <!-- plugins css -->
-        <link rel="stylesheet" href="{{ asset('view/css/plugins.css') }}">
-        <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="{{ asset('view/css/style.css') }}">
-        <!-- Responsive css -->
-        <link rel="stylesheet" href="{{ asset('view/css/responsive.css') }}">
-        <!-- Custom Stylesheet (Add your custom styles here) -->
-        <link rel="stylesheet" href="{{ asset('view/css/custom.css') }}">
-    </head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>QuMindWell - Navigating Minds, Building Wellness</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Place favicon.png in the root directory -->
+    <link rel="shortcut icon" href="{{ asset('view/img/favicon.png') }}" type="image/x-icon" />
+    <!-- Font Icons css -->
+    <link rel="stylesheet" href="{{ asset('view/css/font-icons.css') }}">
+    <!-- plugins css -->
+    <link rel="stylesheet" href="{{ asset('view/css/plugins.css') }}">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{{ asset('view/css/style.css') }}">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="{{ asset('view/css/responsive.css') }}">
+    <!-- Custom Stylesheet (Add your custom styles here) -->
+    <link rel="stylesheet" href="{{ asset('view/css/custom.css') }}">
+</head>
 
 <body>
     <!-- HEADER AREA START (header-5) -->
@@ -161,7 +161,7 @@
                             </div>
                         </div>
                         <!-- user-menu -->
-                        <div class="ltn__drop-menu user-menu">
+                        {{-- <div class="ltn__drop-menu user-menu">
                             <ul>
                                 <li>
                                     <a href="#"><i class="icon-user"></i></a>
@@ -172,7 +172,7 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
