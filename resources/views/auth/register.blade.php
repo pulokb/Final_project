@@ -34,11 +34,11 @@
             <div class="col-lg-6 offset-lg-3">
                 <div class="account-login-inner">
                     <form action="#" class="ltn__form-box contact-form-box">
-                        <input type="text" name="firstname" placeholder="First Name">
-                        <input type="text" name="lastname" placeholder="Last Name">
+                        <input type="text" name="name" placeholder="Full Name">
                         <input type="text" name="email" placeholder="Email*">
+                        <input type="text" name="phone" placeholder="Phone Number">
+                        <input type="text" name="address" placeholder="Address*">
                         <input type="password" name="password" placeholder="Password*">
-                        <input type="password" name="confirmpassword" placeholder="Confirm Password*">
                         <label class="checkbox-inline">
                             <input type="checkbox" value="">
                             I consent to Herboil processing my personal data in order to send personalized marketing

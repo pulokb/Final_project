@@ -54,6 +54,12 @@
                                         </li>
                                     </ul>
                                 </div>
+
+                                <div class="blog-content">
+                                    <h3><a href="{{$symptom->url()}}">{{$symptom->title}}</a></h3>
+                                    <p>{!!Str::limit($symptom->details,100)!!}</p>
+                                    <a href="{{$symptom->url()}}" class="btn btn-brand">Read more</a>
+                                </div>
                                 <div class="ltn__blog-btn">
                                     <a href="{{ route('blog.details', $symptom->id) }}">Read more</a>
                                 </div>

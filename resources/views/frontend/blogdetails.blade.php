@@ -6,11 +6,11 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="ltn__breadcrumb-inner">
-                    <h1 class="page-title">{{ $blogPost->title }}</h1>
+                    <h1 class="page-title">{{ $symptom->title }}</h1>
                     <div class="ltn__breadcrumb-list">
                         <ul>
                             <li><a href="{{ route('index') }}"><span class="ltn__secondary-color"><i class="fas fa-home"></i></span> Home</a></li>
-                            <li>{{ $blogPost->title }}</li>
+                            <li>{{ $symptom->title }}</li>
                         </ul>
                     </div>
                 </div>
@@ -26,10 +26,10 @@
             <div class="ltn__blog-details-inner">
                 <div class="ltn__blog-details-post">
                     <div class="ltn__blog-content">
-                        <h3>{{ $blogPost->title }}</h3>
-                        <h3>{{ $blogPost->image }}</h3>
-                        <p>{{ $blogPost->details }}</p>
-                        <p>{{ $blogPost->note }}</p>
+                        <h3>{{ $symptom->title }}</h3>
+                        <h3>{{ $symptom->image }}</h3>
+                        <p>{{ $symptom->details }}</p>
+                        <p>{{ $symptom->note }}</p>
                         <!-- You can display other details of the blog post here -->
                     </div>
                 </div>

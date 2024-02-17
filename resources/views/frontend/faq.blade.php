@@ -97,7 +97,7 @@
                     <div class="need-support text-center mt-100">
                         <h2>Still need help? Reach out to support 24/7:</h2>
                         <div class="btn-wrapper mb-30">
-                            <a href="contact.html" class="theme-btn-1 btn">Contact Us</a>
+                            <a href="{{ route('contact') }}" class="theme-btn-1 btn">Contact Us</a>
                         </div>
                         <h3><i class="fas fa-phone"></i> +8801793651750</h3>
                     </div>

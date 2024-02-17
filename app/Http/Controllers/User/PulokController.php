@@ -89,12 +89,10 @@ public function faq(){
     return view("frontend.faq");
 }
 
-public function details(int $id)
-{
-    $symptom = Symptoms::findOrFail($id); // Assuming your model is named BlogPost
-    return view('frontend.blogdetails', compact('symptom'));
-
-}
+public function show(Symptoms $symptom)
+    {
+        return view('user.blog_show', compact('symptom'));
+    }
 
 
 }
