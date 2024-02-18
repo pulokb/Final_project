@@ -128,13 +128,22 @@
                                                     {{ Auth::user()->name }}
                                                 </a>
                                                 <ul>
-                                                    <li><a href="{{ route('logout') }}"
-                                                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                                    <li class="">
+                                                        <a href="{{ route('admin.logout') }}"
+                                                            onclick="event.preventDefault();
+                                                            document.getElementById('logout-form').submit();">
+                                                            <i class="metismenu-icon pe-7s-back"></i>
                                                             {{ __('Logout') }}
-                                                        </a></li>
+                                                        </a>
+                                                        <form id="logout-form" action="{{ route('admin.logout') }}"
+                                                            method="POST" style="display: none;">
+                                                            @csrf
+                                                        </form>
+                                                    </li>
                                                     <li><a href="{{ route('index') }}">{{ __('My Account') }}</a></li>
                                                 </ul>
                                             </li>
+
                                         @endguest
                                         <!-- End Authentication Links -->
                                     </ul>
@@ -153,7 +162,8 @@
                             </div>
                             <div class="header-search-1-form">
                                 <form id="#" method="get" action="#">
-                                    <input type="text" name="search" value="" placeholder="Search here..." />
+                                    <input type="text" name="search" value=""
+                                        placeholder="Search here..." />
                                     <button type="submit">
                                         <span><i class="icon-search"></i></span>
                                     </button>
@@ -219,27 +229,27 @@
                         <li><a href="{{ route('contact') }}">Contact</a></li>
                         <!-- Authentication Links -->
                         @guest
-                        @if (Route::has('login'))
-                            <li><a href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                        @endif
-                        @if (Route::has('register'))
-                            <li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>
-                        @endif
-                    @else
-                        <li>
-                            <a href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                {{ Auth::user()->name }}
-                            </a>
-                            <ul>
-                                <li><a href="{{ route('logout') }}"
-                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a></li>
-                                <li><a href="{{ route('index') }}">{{ __('My Account') }}</a></li>
-                            </ul>
-                        </li>
-                    @endguest
-                    <!-- End Authentication Links -->
+                            @if (Route::has('login'))
+                                <li><a href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                            @endif
+                            @if (Route::has('register'))
+                                <li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>
+                            @endif
+                        @else
+                            <li>
+                                <a href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    {{ Auth::user()->name }}
+                                </a>
+                                <ul>
+                                    <li><a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a></li>
+                                    <li><a href="{{ route('index') }}">{{ __('My Account') }}</a></li>
+                                </ul>
+                            </li>
+                        @endguest
+                        <!-- End Authentication Links -->
                     </ul>
                 </div>
                 {{-- <div class="ltn__utilize-buttons ltn__utilize-buttons-2">

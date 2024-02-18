@@ -39,7 +39,7 @@ class LoginController extends Controller
     public function __construct()
     {
 
-        $this ->redirectTo = config('admin.admin_route_prefix')."/".config('admin.admin_dashboard');
+        $this ->redirectTo = config('user.user_route_prefix')."/".config('user.user_dashboard');
         $this->middleware(['guest','blockIp'])->except('logout');
 
     }
@@ -76,5 +76,15 @@ class LoginController extends Controller
             Auth::login($newUser);
             return redirect()->route('user.dashboard');
         }
+    }
+
+    //override
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+
+        $request->session()->invalidate();
+
+        return $this->loggedOut($request) ?: redirect(config('user.user_route_prefix').'/login');
     }
 }

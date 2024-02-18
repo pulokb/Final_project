@@ -11,7 +11,14 @@ use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Frontend\PageController;
 use App\Http\Controllers\User\PulokController;
 use App\Http\Controllers\User\SearchController;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
+
+Route::group(['prefix' => config('user.user_route_prefix'), 'as' => 'user.'], function () {
+    Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+    Route::post('/login', [LoginController::class, 'login']);
+    Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+});
 
 Route::group(['middleware'=>['blockIp','localaization']],function(){
 
