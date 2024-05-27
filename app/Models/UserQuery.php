@@ -11,21 +11,34 @@ use Illuminate\Database\Eloquent\Model;
  * @version December 28, 2023, 1:14 am +06
  *
  * @property integer $user_id
- * @property integer $age
- * @property string $gender
- * @property string $physical_health
- * @property string $mental_health
- * @property string $therapist
- * @property string $medication
- * @property string $sleep_hours
- * @property string $sleep_quality
- * @property string $relationship_status
- * @property string $current_relationship
- * @property string $smoking_frequency
- * @property string $drinking_frequency
- * @property string $job_change
- * @property string $routine_change
- * @property string $tough_emotional
+ * @property string $student_q1
+ * @property string $student_q2
+ * @property string $student_q3
+ * @property string $student_q4
+ * @property string $student_q5
+ * @property string $family_q1
+ * @property string $family_q2
+ * @property string $family_q3
+ * @property string $family_q4
+ * @property string $family_q5
+ * @property string $relationship_q1
+ * @property string $relationship_q2
+ * @property string $relationship_q3
+ * @property string $relationship_q4
+ * @property string $relationship_q5
+ * @property string $job_q1
+ * @property string $job_q2
+ * @property string $job_q3
+ * @property string $job_q4
+ * @property string $job_q5
+ * @property string $mental_health_q1
+ * @property string $mental_health_q2
+ * @property string $mental_health_q3
+ * @property string $mental_health_q4
+ * @property string $mental_health_q5
+ *
+ *
+ *
  */
 class UserQuery extends Model
 {
@@ -39,21 +52,31 @@ class UserQuery extends Model
 
     public $fillable = [
         'user_id',
-        'age',
-        'gender',
-        'physical_health',
-        'mental_health',
-        'therapist',
-        'medication',
-        'sleep_hours',
-        'sleep_quality',
-        'relationship_status',
-        'current_relationship',
-        'smoking_frequency',
-        'drinking_frequency',
-        'job_change',
-        'routine_change',
-        'tough_emotional'
+        'student_q1',
+        'student_q2',
+        'student_q3',
+        'student_q4',
+        'student_q5',
+        'family_q1',
+        'family_q2',
+        'family_q3',
+        'family_q4',
+        'family_q5',
+        'relationship_q1',
+        'relationship_q2',
+        'relationship_q3',
+        'relationship_q4',
+        'relationship_q5',
+        'job_q1',
+        'job_q2',
+        'job_q3',
+        'job_q4',
+        'job_q5',
+        'mental_health_q1',
+        'mental_health_q2',
+        'mental_health_q3',
+        'mental_health_q4',
+        'mental_health_q5'
     ];
 
     /**
@@ -64,21 +87,32 @@ class UserQuery extends Model
     protected $casts = [
         'id' => 'integer',
         'user_id' => 'integer',
-        'age' => 'integer',
-        'gender' => 'string',
-        'physical_health' => 'string',
-        'mental_health' => 'string',
-        'therapist' => 'string',
-        'medication' => 'string',
-        'sleep_hours' => 'string',
-        'sleep_quality' => 'string',
-        'relationship_status' => 'string',
-        'current_relationship' => 'string',
-        'smoking_frequency' => 'string',
-        'drinking_frequency' => 'string',
-        'job_change' => 'string',
-        'routine_change' => 'string',
-        'tough_emotional' => 'string'
+        'student_q1' => 'string',
+        'student_q2' => 'string',
+        'student_q3' => 'string',
+        'student_q4' => 'string',
+        'student_q5' => 'string',
+        'family_q1' => 'string',
+        'family_q2' => 'string',
+        'family_q3' => 'string',
+        'family_q4' => 'string',
+        'family_q5' => 'string',
+        'relationship_q1' => 'string',
+        'relationship_q2' => 'string',
+        'relationship_q3' => 'string',
+        'relationship_q4' => 'string',
+        'relationship_q5' => 'string',
+        'job_q1' => 'string',
+        'job_q2' => 'string',
+        'job_q3' => 'string',
+        'job_q4' => 'string',
+        'job_q5' => 'string',
+        'mental_health_q1' => 'string',
+        'mental_health_q2' => 'string',
+        'mental_health_q3' => 'string',
+        'mental_health_q4' => 'string',
+        'mental_health_q5' => 'string'
+
     ];
 
     /**
@@ -88,21 +122,31 @@ class UserQuery extends Model
      */
     public static $rules = [
         'user_id' => 'nullable',
-        'age' => 'nullable',
-        'gender' => 'nullable',
-        'physical_health' => 'nullable',
-        'mental_health' => 'nullable',
-        'therapist' => 'nullable',
-        'medication' => 'nullable',
-        'sleep_hours' => 'nullable',
-        'sleep_quality' => 'nullable',
-        'relationship_status' => 'nullable',
-        'current_relationship' => 'nullable',
-        'smoking_frequency' => 'nullable',
-        'drinking_frequency' => 'nullable',
-        'job_change' => 'nullable',
-        'routine_change' => 'nullable',
-        'tough_emotional' => 'nullable',
+        'student_q1' => 'nullable',
+        'student_q2' => 'nullable',
+        'student_q3' => 'nullable',
+        'student_q4' => 'nullable',
+        'student_q5' => 'nullable',
+        'family_q1' => 'nullable',
+        'family_q2' => 'nullable',
+        'family_q3' => 'nullable',
+        'family_q4' => 'nullable',
+        'family_q5' => 'nullable',
+        'relationship_q1' => 'nullable',
+        'relationship_q2' => 'nullable',
+        'relationship_q3' => 'nullable',
+        'relationship_q4' => 'nullable',
+        'relationship_q5' => 'nullable',
+        'job_q1' => 'nullable',
+        'job_q2' => 'nullable',
+        'job_q3' => 'nullable',
+        'job_q4' => 'nullable',
+        'job_q5' => 'nullable',
+        'mental_health_q1' => 'nullable',
+        'mental_health_q2' => 'nullable',
+        'mental_health_q3' => 'nullable',
+        'mental_health_q4' => 'nullable',
+        'mental_health_q5' => 'nullable',
     ];
 
 

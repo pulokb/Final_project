@@ -17,34 +17,36 @@ class PulokController extends Controller
     }
 
     public function suggestions_symptoms(Request $request)
-    {
-        $user = auth()->user();
+{
+    $user = auth()->user();
 
-        UserQuery::create([
-            'user_id' => $user->id ?? 2,
-            'age' => $request->age,
-            'gender' => $request->gender,
-            'physical_health' => $request->physical_health,
-            'mental_health' => $request->mental_health,
-            'therapist' => $request->therapist,
-            'medication' => $request->medication,
-            'sleep_hours' => $request->sleep_hours,
-            'sleep_quality' => $request->sleep_quality,
-            'relationship_status' => $request->relationship_status,
-            'current_relationship' => $request->current_relationship,
-            'smoking_frequency' => $request->smoking_frequency,
-            'drinking_frequency' => $request->drinking_frequency,
-            'job_change' => $request->job_change,
-            'routine_change' => $request->routine_change,
-            'tough_emotional' => $request->tough_emotional,
-            // Add other fields as needed
-        ]);
+    $fields = [
+        'student_q1', 'student_q2', 'student_q3', 'student_q4', 'student_q5',
+        'family_q1', 'family_q2', 'family_q3', 'family_q4', 'family_q5',
+        'relationship_q1', 'relationship_q2', 'relationship_q3', 'relationship_q4', 'relationship_q5',
+        'job_q1', 'job_q2', 'job_q3', 'job_q4', 'job_q5',
+        'mental_health_q1', 'mental_health_q2', 'mental_health_q3', 'mental_health_q4', 'mental_health_q5',
+    ];
 
-         $user_queries = UserQuery::latest()->get()->first();
-
-
-        return view("frontend.suggestions_symptoms", compact("user_queries"));
+    $rules = [];
+    foreach ($fields as $field) {
+        $rules[$field] = 'required|max:191|string';
     }
+
+    $request->validate($rules);
+
+    $data = ['user_id' => $user->id ?? 2];
+    foreach ($fields as $field) {
+        $data[$field] = $request->$field;
+    }
+
+    UserQuery::create($data);
+
+    $user_queries = UserQuery::latest()->first();
+
+    return view("frontend.suggestions_symptoms", compact("user_queries"));
+}
+
 
     public function symptoms(Request $request)
 {
@@ -70,16 +72,7 @@ public function suggestions(Request $request)
     // return $request;
     $user = auth()->user();
 
-    // Suggestions::create([
-    //     'user_id' => $user->id ?? 2,
-    //     'username' => $user->name ?? "pulok",
-    //     'title' => $request->input('title'), // Assuming title is sent in the request
-    //     'details' => $request->input('content'), // Assuming content is sent in the request
-    //     'image' => $request->input('image_path'), // Assuming image_path is sent in the request
-    //     'note' => $user->name ?? "pulok",
-    // ]);
 
-    // Fetch suggestions from the database
    $suggestions = Suggestions::get();
 
     return view('frontend.suggestions', compact('suggestions'));
