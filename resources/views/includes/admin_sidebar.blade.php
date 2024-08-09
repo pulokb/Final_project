@@ -309,3 +309,12 @@
 </li>
 @endcan
 
+@can('HelpActivity-view')
+<li class="">
+    <a href="{{route('admin.helpActivities.index')}}" class="{{ Request::is(config('admin.admin_route_prefix').'/helpActivities**') ? 'mm-active' : '' }}">
+        <i class="metismenu-icon pe-7s-menu"></i>
+        {{ __('Help Activities') }}
+    </a>
+</li>
+@endcan
+

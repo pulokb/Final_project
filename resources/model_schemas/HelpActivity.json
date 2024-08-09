@@ -12,10 +12,10 @@
         "inView": false
     },
     {
-        "name": "name",
+        "name": "activity",
         "dbType": "string",
         "htmlType": "text",
-        "validations": "required|string|max:191",
+        "validations": "",
         "searchable": true,
         "fillable": true,
         "primary": false,
@@ -24,10 +24,10 @@
         "inView": true
     },
     {
-        "name": "details",
+        "name": "note",
         "dbType": "text",
         "htmlType": "textarea",
-        "validations": "nullable|string|max:191",
+        "validations": "",
         "searchable": true,
         "fillable": true,
         "primary": false,
@@ -46,6 +46,38 @@
         "inForm": true,
         "inIndex": true,
         "inView": true
+    },
+    {
+        "name": "help_request",
+        "dbType": "integer:unsigned:foreign,help_requests,id",
+        "htmlType": "selectTable:help_requests:name,id",
+        "validations": "",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,HelpRequest,help_request,id"
+    },
+    {
+        "name": "volunteer",
+        "dbType": "integer:unsigned:foreign,volunteers,id",
+        "htmlType": "selectTable:volunteers:name,id",
+        "validations": "",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Volunteer,volunteer,id"
     },
     {
         "name": "image",

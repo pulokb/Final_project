@@ -110,3 +110,8 @@ Route::group(['prefix' => 'admin'], function () {
 Route::group(['prefix' => 'admin'], function () {
     Route::resource('volunteers', App\Http\Controllers\Admin\VolunteerController::class, ["as" => 'admin']);
 });
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::resource('helpActivities', App\Http\Controllers\Admin\HelpActivityController::class, ["as" => 'admin']);
+});

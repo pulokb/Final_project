@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Providers;
+namespace App\Providers;
+use App\Models\Volunteer;
+use App\Models\HelpRequest;
 use App\Models\HelpType;
 use App\Models\Admin;
 
@@ -27,6 +29,14 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        View::composer(['admin.help_activities.fields'], function ($view) {
+            $volunteerItems = Volunteer::pluck('name','id')->toArray();
+            $view->with('volunteerItems', $volunteerItems);
+        });
+        View::composer(['admin.help_activities.fields'], function ($view) {
+            $help_requestItems = HelpRequest::pluck('name','id')->toArray();
+            $view->with('help_requestItems', $help_requestItems);
+        });
         View::composer(['admin.help_requests.fields'], function ($view) {
             $help_typeItems = HelpType::pluck('name','id')->toArray();
             $view->with('help_typeItems', $help_typeItems);

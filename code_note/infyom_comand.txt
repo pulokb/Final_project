@@ -14,3 +14,7 @@ php artisan infyom:scaffold EmergencyContact --fieldsFile=resources\model_schema
 
 php artisan infyom:scaffold Volunteer --fieldsFile=resources\model_schemas\Volunteer.json
 php artisan infyom:rollback Volunteer scaffold
+
+php artisan infyom:scaffold HelpActivity --fieldsFile=resources\model_schemas\HelpActivity.json
+
+
