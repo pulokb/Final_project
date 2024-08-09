@@ -57,14 +57,14 @@
 <!-- Latitude Field -->
 <div class="form-group">
     {!! Form::label('latitude',  __('Latitude')) !!}
-    {!! Form::number('latitude', null, ['class' => 'form-control','required']) !!}
+    {!! Form::number('latitude', null, ['class' => 'form-control','required','step'=>'any']) !!}
 </div>
 
 
 <!-- Longtitude Field -->
 <div class="form-group">
     {!! Form::label('longtitude', __('Longtitude')) !!}
-    {!! Form::text('longtitude', null, ['class' => 'form-control','required']) !!}
+    {!! Form::number('longtitude', null, ['class' => 'form-control','required','step'=>'any']) !!}
 </div>
 
 
