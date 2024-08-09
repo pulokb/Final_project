@@ -266,3 +266,25 @@
 </li>
 @endcan
 
+
+
+
+
+@can('HelpType-view')
+<li class="">
+    <a href="{{route('admin.helpTypes.index')}}" class="{{ Request::is(config('admin.admin_route_prefix').'/helpTypes**') ? 'mm-active' : '' }}">
+        <i class="metismenu-icon pe-7s-menu"></i>
+        {{ __('Help Types') }}
+    </a>
+</li>
+@endcan
+
+@can('HelpRequest-view')
+<li class="">
+    <a href="{{route('admin.helpRequests.index')}}" class="{{ Request::is(config('admin.admin_route_prefix').'/helpRequests**') ? 'mm-active' : '' }}">
+        <i class="metismenu-icon pe-7s-menu"></i>
+        {{ __('Help Requests') }}
+    </a>
+</li>
+@endcan
+

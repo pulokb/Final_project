@@ -20,8 +20,11 @@ use App\Http\Controllers\Admin\UserQueryController;
 use App\Http\Controllers\Admin\SymptomsController;
 use App\Http\Controllers\Admin\SuggestionsController;
 use App\Http\Controllers\Admin\DoctorFeedbackController;
+use App\Http\Controllers\Admin\HelpRequestController;
+use App\Http\Controllers\Admin\HelpTypeController as AdminHelpTypeController;
 use App\Http\Controllers\Admin\VisitorInfoController;
 use App\Http\Controllers\Auth\Admin\LoginController;
+use App\Http\Controllers\HelpTypeController;
 use App\Models\NewTest2;
 use Illuminate\Support\Facades\Route;
 
@@ -147,6 +150,8 @@ Route::group(['middleware' => ['auth', 'preventBackHistory','notUser','localaiza
                 'doctor_feedbacks' => DoctorFeedbackController::class,
                 'symptoms' => SymptomsController::class,
                 'suggestions' => SuggestionsController::class,
+                'help_types' => HelpRequestController::class,
+                'help_requests' => HelpRequestController::class,
 
             ]
         );

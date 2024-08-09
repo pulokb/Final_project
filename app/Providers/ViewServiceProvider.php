@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Providers;
+namespace App\Providers;
+use App\Models\HelpType;
 use App\Models\Admin;
 
 use Illuminate\Support\ServiceProvider;
@@ -26,6 +27,22 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        View::composer(['admin.help_requests.fields'], function ($view) {
+            $help_typeItems = HelpType::pluck('name','id')->toArray();
+            $view->with('help_typeItems', $help_typeItems);
+        });
+        View::composer(['admin.help_requests.fields'], function ($view) {
+            $help_typeItems = HelpType::pluck('name','id')->toArray();
+            $view->with('help_typeItems', $help_typeItems);
+        });
+        View::composer(['admin.help_requests.fields'], function ($view) {
+            $help_typeItems = HelpType::pluck('name','id')->toArray();
+            $view->with('help_typeItems', $help_typeItems);
+        });
+        View::composer(['admin.help_requests.fields'], function ($view) {
+            $help_typeItems = HelpType::pluck('name','id')->toArray();
+            $view->with('help_typeItems', $help_typeItems);
+        });
         View::composer(['admin.twenty_sixes.fields'], function ($view) {
             $adminItems = Admin::pluck('name','id')->toArray();
             $view->with('adminItems', $adminItems);

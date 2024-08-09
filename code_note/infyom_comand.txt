@@ -3,3 +3,9 @@ php artisan infyom:scaffold UserQuery --fieldsFile=resources\model_schemas\UserQ
 php artisan infyom:scaffold DoctorFeedback --fieldsFile=resources\model_schemas\DoctorFeedback.json
 php artisan infyom:scaffold Symptoms --fieldsFile=resources\model_schemas\Symptoms.json
 php artisan infyom:scaffold Suggestions --fieldsFile=resources\model_schemas\Suggestions.json
+
+
+php artisan infyom:scaffold HelpType --fieldsFile=resources\model_schemas\HelpType.json
+php artisan infyom:rollback HelpType scaffold
+php artisan infyom:scaffold HelpRequest --fieldsFile=resources\model_schemas\HelpRequest.json
+php artisan infyom:rollback HelpRequest scaffold

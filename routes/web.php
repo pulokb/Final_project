@@ -77,3 +77,22 @@ Route::group(['prefix' => 'admin'], function () {
 Route::group(['prefix' => 'admin'], function () {
     Route::resource('suggestions', App\Http\Controllers\Admin\SuggestionsController::class, ["as" => 'admin']);
 });
+
+
+
+
+
+
+
+
+
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::resource('helpTypes', App\Http\Controllers\Admin\HelpTypeController::class, ["as" => 'admin']);
+});
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::resource('helpRequests', App\Http\Controllers\Admin\HelpRequestController::class, ["as" => 'admin']);
+});
