@@ -25,6 +25,9 @@ class CreateHelpRequestsTable extends Migration
             $table->string('district')->nullable();
             $table->string('area')->nullable();
             $table->text('address')->nullable();
+            $table->double('latitude')->nullable();
+            $table->double('longtitude')->nullable();
+            $table->text('map_address')->nullable();
             $table->string('priority')->nullable();
             $table->string('status')->nullable();
             $table->string('video')->nullable();

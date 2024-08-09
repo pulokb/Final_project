@@ -46,6 +46,9 @@ class HelpRequest extends Model
         'district',
         'area',
         'address',
+        'latitude',
+        'longtitude',
+        'map_address',
         'help_type',
         'priority',
         'status',
@@ -69,6 +72,9 @@ class HelpRequest extends Model
         'district' => 'string',
         'area' => 'string',
         'address' => 'string',
+        'latitude' => 'double',
+        'longtitude' => 'double',
+        'map_address' => 'string',
         'help_type' => 'integer',
         'priority' => 'string',
         'status' => 'string',
@@ -83,12 +89,12 @@ class HelpRequest extends Model
      * @var array
      */
     public static $rules = [
-        'title' => 'required|string|max:191',
+        // 'title' => 'required|string|max:191',
         'name' => 'nullable|string|max:191',
         'phone' => 'nullable|string|max:191',
         'email' => 'nullable|string|max:191',
-        'district' => 'nullable|string|max:191',
-        'area' => 'nullable|string|max:191'
+        // 'district' => 'nullable|string|max:191',
+        // 'area' => 'nullable|string|max:191'
     ];
 
     /**
