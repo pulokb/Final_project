@@ -24,6 +24,7 @@ use App\Http\Controllers\Admin\EmergencyContactController;
 use App\Http\Controllers\Admin\HelpRequestController;
 use App\Http\Controllers\Admin\HelpTypeController as AdminHelpTypeController;
 use App\Http\Controllers\Admin\VisitorInfoController;
+use App\Http\Controllers\Admin\VolunteerController;
 use App\Http\Controllers\Auth\Admin\LoginController;
 use App\Http\Controllers\HelpTypeController;
 use App\Models\NewTest2;
@@ -154,6 +155,7 @@ Route::group(['middleware' => ['auth', 'preventBackHistory','notUser','localaiza
                 'help_types' => HelpRequestController::class,
                 'help_requests' => HelpRequestController::class,
                 'emergency_contacts' => EmergencyContactController::class,
+                'volunteers' => VolunteerController::class,
 
             ]
         );

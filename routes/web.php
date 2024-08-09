@@ -101,3 +101,5 @@ Route::group(['prefix' => 'admin'], function () {
 Route::group(['prefix' => 'admin'], function () {
     Route::resource('emergencyContacts', App\Http\Controllers\Admin\EmergencyContactController::class, ["as" => 'admin']);
 });
+
+
