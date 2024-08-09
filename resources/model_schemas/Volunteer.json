@@ -169,8 +169,8 @@
     },
     {
         "name": "longtitude",
-        "dbType": "string",
-        "htmlType": "text",
+        "dbType": "double",
+        "htmlType": "number",
         "validations": "",
         "searchable": true,
         "fillable": true,

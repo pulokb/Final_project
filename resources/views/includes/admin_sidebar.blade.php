@@ -299,3 +299,13 @@
 
 
 
+
+@can('Volunteer-view')
+<li class="">
+    <a href="{{route('admin.volunteers.index')}}" class="{{ Request::is(config('admin.admin_route_prefix').'/volunteers**') ? 'mm-active' : '' }}">
+        <i class="metismenu-icon pe-7s-menu"></i>
+        {{ __('Volunteers') }}
+    </a>
+</li>
+@endcan
+
