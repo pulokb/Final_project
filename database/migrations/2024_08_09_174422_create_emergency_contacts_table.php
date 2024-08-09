@@ -17,20 +17,20 @@ class CreateEmergencyContactsTable extends Migration
     {
         Schema::create('emergency_contacts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('operator');
-            $table->string('phone');
-            $table->string('email');
-            $table->text('details');
-            $table->string('district');
-            $table->string('area');
-            $table->text('address');
-            $table->double('latitude');
-            $table->string('longtitude');
-            $table->text('map_address');
-            $table->string('status');
-            $table->string('type');
-            $table->string('image');
+            $table->string('name')->nullable();
+            $table->string('operator')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('email')->nullable();
+            $table->text('details')->nullable();
+            $table->string('district')->nullable();
+            $table->string('area')->nullable();
+            $table->text('address')->nullable();
+            $table->double('latitude')->nullable();
+            $table->double('longtitude')->nullable();
+            $table->text('map_address')->nullable();
+            $table->string('status')->nullable();
+            $table->string('type')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
 

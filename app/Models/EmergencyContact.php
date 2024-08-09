@@ -32,7 +32,7 @@ class EmergencyContact extends Model
     use HasFactory;
 
     public $table = 'emergency_contacts';
-    
+
 
 
 
@@ -69,7 +69,7 @@ class EmergencyContact extends Model
         'area' => 'string',
         'address' => 'string',
         'latitude' => 'double',
-        'longtitude' => 'string',
+        'longtitude' => 'double',
         'map_address' => 'string',
         'status' => 'string',
         'type' => 'string',
@@ -85,13 +85,13 @@ class EmergencyContact extends Model
         'name' => 'required|string|max:191',
         'operator' => 'required|string|max:191',
         'phone' => 'required|string|max:191',
-        'email' => 'required|string|max:191',
-        'details' => 'nullable|string|max:191',
-        'district' => 'nullable|string|max:191',
-        'area' => 'nullable|string|max:191',
-        'address' => 'nullable|string|max:191',
-        'map_address' => 'nullable|string|max:191'
+        'email' => 'nullable|string|max:191',
+        // 'details' => 'nullable|string|max:191',
+        // 'district' => 'nullable|string|max:191',
+        // 'area' => 'nullable|string|max:191',
+        // 'address' => 'nullable|string|max:191',
+        // 'map_address' => 'nullable|string|max:191'
     ];
 
-    
+
 }
