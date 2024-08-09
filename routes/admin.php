@@ -20,6 +20,7 @@ use App\Http\Controllers\Admin\UserQueryController;
 use App\Http\Controllers\Admin\SymptomsController;
 use App\Http\Controllers\Admin\SuggestionsController;
 use App\Http\Controllers\Admin\DoctorFeedbackController;
+use App\Http\Controllers\Admin\EmergencyContactController;
 use App\Http\Controllers\Admin\HelpRequestController;
 use App\Http\Controllers\Admin\HelpTypeController as AdminHelpTypeController;
 use App\Http\Controllers\Admin\VisitorInfoController;
@@ -152,6 +153,7 @@ Route::group(['middleware' => ['auth', 'preventBackHistory','notUser','localaiza
                 'suggestions' => SuggestionsController::class,
                 'help_types' => HelpRequestController::class,
                 'help_requests' => HelpRequestController::class,
+                'emergency_contacts' => EmergencyContactController::class,
 
             ]
         );

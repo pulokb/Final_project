@@ -288,3 +288,12 @@
 </li>
 @endcan
 
+@can('EmergencyContact-view')
+<li class="">
+    <a href="{{route('admin.emergencyContacts.index')}}" class="{{ Request::is(config('admin.admin_route_prefix').'/emergencyContacts**') ? 'mm-active' : '' }}">
+        <i class="metismenu-icon pe-7s-menu"></i>
+        {{ __('Emergency Contacts') }}
+    </a>
+</li>
+@endcan
+

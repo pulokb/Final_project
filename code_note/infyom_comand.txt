@@ -9,3 +9,5 @@ php artisan infyom:scaffold HelpType --fieldsFile=resources\model_schemas\HelpTy
 php artisan infyom:rollback HelpType scaffold
 php artisan infyom:scaffold HelpRequest --fieldsFile=resources\model_schemas\HelpRequest.json
 php artisan infyom:rollback HelpRequest scaffold
+
+php artisan infyom:scaffold EmergencyContact --fieldsFile=resources\model_schemas\EmergencyContact.json
