@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\DataTables\EmergencyContactDataTable;
+use App\Helpers\FileHelper;
 use App\Http\Requests;
 use App\Http\Requests\EmergencyContactCreateRequest;
 use App\Http\Requests\EmergencyContactUpdateRequest;
@@ -33,9 +34,9 @@ class EmergencyContactController extends AppBaseController
     public function store(EmergencyContactCreateRequest $request)
     {
         $this->authorize('EmergencyContact-create');
-        EmergencyContact::create($request->all());
-        //$imageName = FileHelper::uploadImage($request);
-        //EmergencyContact::create(array_merge($request->all(), ['image' => $imageName]));
+        // EmergencyContact::create($request->all());
+        $imageName = FileHelper::uploadImage($request);
+        EmergencyContact::create(array_merge($request->all(), ['image' => $imageName]));
         notify()->success(__("Successfully Created"), __("Success"));
         return redirect(route('admin.emergencyContacts.index'));
     }
@@ -58,9 +59,9 @@ class EmergencyContactController extends AppBaseController
     public function update(EmergencyContact $emergencyContact, EmergencyContactUpdateRequest $request)
     {
         $this->authorize('EmergencyContact-update');
-        // $imageName = FileHelper::uploadImage($request, $emergencyContact);
-        // $emergencyContact->fill(array_merge($request->all(), ['image' => $imageName]))->save();
-        $emergencyContact->fill($request->all())->save();
+        $imageName = FileHelper::uploadImage($request, $emergencyContact);
+        $emergencyContact->fill(array_merge($request->all(), ['image' => $imageName]))->save();
+        // $emergencyContact->fill($request->all())->save();
         notify()->success(__("Successfully Updated"), __("Success"));
         return redirect(route('admin.emergencyContacts.index'));
     }
@@ -69,7 +70,7 @@ class EmergencyContactController extends AppBaseController
     public function destroy(EmergencyContact $emergencyContact)
     {
         $this->authorize('EmergencyContact-delete');
-        //FileHelper::deleteImage($emergencyContact);
+        FileHelper::deleteImage($emergencyContact);
         $emergencyContact->delete();
     }
 }
